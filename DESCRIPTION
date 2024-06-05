@@ -13,3 +13,5 @@ BugReports: https://github.com/lindsayjorgenson/naccho.viz/issues
 Imports: 
     highcharter,
     magrittr
+Suggests: 
+    dplyr

@@ -2,4 +2,5 @@
 
 export("%>%")
 export(create_single_bar)
+export(create_stacked_bar)
 importFrom(magrittr,"%>%")
