@@ -14,7 +14,7 @@ globalVariables(c(".data", "naccho_minimal_theme", "naccho_teal", "naccho_green"
 #' @param color_bars boolean, TRUE or FALSE, where TRUE results in each bar being a different color.
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
-#' @param y_format character string; format for the y-axis numbers, defaults to "{value}". This is used to adjust decimals or add characters after the number, e.g., "{value}%".
+#' @param y_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number: "{value:,.0f}%", "{value:.1f}", "${value:.2f}".
 #' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho_colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
@@ -57,7 +57,7 @@ create_single_bar <- function(
     color_bars = FALSE,
     y_label,
     y_max = 100,
-    y_format = "{value}",
+    y_format = "{value:,.0f}",
     my_colors = naccho_colors,
     title_text = "",
     subtitle_text = "",
@@ -70,6 +70,13 @@ create_single_bar <- function(
     allow_export = TRUE,
     accessible_desc = ""
     ) {
+
+  hcoptslang <- getOption("highcharter.lang")
+  hcoptslang$thousandsSep <- ","
+
+  # replace G with B for billions
+  hcoptslang$numericSymbols <- c( " k", " m", " b" ,"t", "P" ,"E")
+  options(highcharter.lang = hcoptslang)
 
   hc <-
     highcharter::hchart(
@@ -190,7 +197,7 @@ create_single_bar <- function(
 #' @param color_bars boolean, TRUE or FALSE, where TRUE results in each bar being a different color.
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
-#' @param y_format character string; format for the y-axis numbers, defaults to "{value}". This is used to adjust decimals or add characters after the number, e.g., "{value}%".
+#' @param y_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number: "{value:,.0f}%", "{value:.1f}", "${value:.2f}".
 #' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho_colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
@@ -247,7 +254,7 @@ create_stacked_bar <- function(
     color_bars = FALSE,
     y_label,
     y_max = 100,
-    y_format = "{value}",
+    y_format = "{value:,.0f}",
     my_colors = naccho_colors,
     title_text = "",
     subtitle_text = "",
@@ -260,6 +267,13 @@ create_stacked_bar <- function(
     allow_export = TRUE,
     accessible_desc = ""
 ) {
+
+  hcoptslang <- getOption("highcharter.lang")
+  hcoptslang$thousandsSep <- ","
+
+  # replace G with B for billions
+  hcoptslang$numericSymbols <- c( " k", " m", " b" ,"t", "P" ,"E")
+  options(highcharter.lang = hcoptslang)
 
   hc <-
     highcharter::hchart(

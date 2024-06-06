@@ -14,7 +14,7 @@ create_stacked_bar(
   color_bars = FALSE,
   y_label,
   y_max = 100,
-  y_format = "{value}",
+  y_format = "{value:,.0f}",
   my_colors = naccho_colors,
   title_text = "",
   subtitle_text = "",
@@ -47,7 +47,7 @@ create_stacked_bar(
 
 \item{y_max}{numeric; the maximun value of the y-axis, defaults to 100.}
 
-\item{y_format}{character string; format for the y-axis numbers, defaults to "{value}". This is used to adjust decimals or add characters after the number, e.g., "{value}\%".}
+\item{y_format}{character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number: "{value:,.0f}\%", "{value:.1f}", "${value:.2f}".}
 
 \item{my_colors}{vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho_colors.}
 
