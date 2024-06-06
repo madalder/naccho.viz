@@ -14,7 +14,7 @@ create_stacked_bar(
   color_bars = FALSE,
   y_label,
   y_max = 100,
-  y_format = "{value}",
+  y_format = "{value:,}",
   my_colors = naccho.viz::naccho_colors,
   title_text = "",
   subtitle_text = "",
@@ -47,7 +47,7 @@ create_stacked_bar(
 
 \item{y_max}{numeric; the maximun value of the y-axis, defaults to 100.}
 
-\item{y_format}{character string; format for the y-axis numbers, defaults to "{value}". This is used to adjust decimals or add characters after the number, e.g., "{value}\%".}
+\item{y_format}{character string; format for the y-axis numbers, defaults to "{value:,}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}\%" add a \% sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}\%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".}
 
 \item{my_colors}{vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.}
 

@@ -14,7 +14,7 @@ globalVariables(c(".data", "naccho.viz::naccho_minimal_theme", "naccho.viz::nacc
 #' @param color_bars boolean, TRUE or FALSE, where TRUE results in each bar being a different color.
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
-#' @param y_format character string; format for the y-axis numbers, defaults to "{value}". This is used to adjust decimals or add characters after the number, e.g., "{value}%".
+#' @param y_format character string; format for the y-axis numbers, defaults to "{value:,}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
 #' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
@@ -57,7 +57,7 @@ create_single_bar <- function(
     color_bars = FALSE,
     y_label,
     y_max = 100,
-    y_format = "{value}",
+    y_format = "{value:,}",
     my_colors = naccho.viz::naccho_colors,
     title_text = "",
     subtitle_text = "",
@@ -190,7 +190,7 @@ create_single_bar <- function(
 #' @param color_bars boolean, TRUE or FALSE, where TRUE results in each bar being a different color.
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
-#' @param y_format character string; format for the y-axis numbers, defaults to "{value}". This is used to adjust decimals or add characters after the number, e.g., "{value}%".
+#' @param y_format character string; format for the y-axis numbers, defaults to "{value:,}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
 #' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
@@ -247,7 +247,7 @@ create_stacked_bar <- function(
     color_bars = FALSE,
     y_label,
     y_max = 100,
-    y_format = "{value}",
+    y_format = "{value:,}",
     my_colors = naccho.viz::naccho_colors,
     title_text = "",
     subtitle_text = "",
