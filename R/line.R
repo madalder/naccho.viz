@@ -1,95 +1,87 @@
-globalVariables(c(".data", "naccho.viz::naccho_minimal_theme", "naccho.viz::naccho_teal", "naccho_green"))
 
-
-#' NACCHO Single Bar Chart
-#'
-#' @description
-#' Create an accessible single bar chart (vertical or horizontal) using a NACCHO theme and the {highcharter} package.
+#' NACCHO Single Line Graph
 #'
 #' @param data the data frame to create the map.
-#' @param type character string; must be "column" or "bar", where "column" displays vertically and "bar" displays horizontally.
 #' @param x_variable object; from the data frame, ideally a character.
 #' @param y_variable numeric; from the data frame.
-#' @param tick_amount numeric; sets the number of ticks, defaults to 6.
-#' @param color_bars boolean, TRUE or FALSE, where TRUE results in each bar being a different color.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param x_label character string; label for the x-axis.
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
 #' @param y_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
-#' @param caption_align character string; options include "left", "center", or "right" where the default is "center".
-#' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
-#' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
 #' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
-#' @return A column or bar chart from highcharter.
+#' @return A line graph from highcharter.
 #' @export
 #'
 #' @examples
 #' test_data <- data.frame(
-#'   year = c("2019", "2022"),
+#'   year = c(2019, 2022),
 #'   value = c(150, 200)
 #' )
 #'
-#' create_single_bar(
+#' # if the x-axis value is a numeric year, all the in-between years will
+#' # display on the x-axis unless the value is transformed to a factor. To
+#' # transform to a factor, use the example below:
+#'
+#' test_data$year <- factor(test_data$year)
+#'
+#'
+#' create_single_line(
 #'   data = test_data,
 #'   x_variable = "year",
 #'   y_variable = "value",
+#'   x_label = "Year",
 #'   y_label = "Number",
 #'   y_max = 250,
 #'   tooltip = "{point.value}"
 #' )
 #'
+#'
+create_single_line <- function(data,
+                               x_variable,
+                               y_variable,
+                               my_colors = naccho.viz::naccho_colors,
+                               x_label,
+                               y_label,
+                               y_max = NULL,
+                               y_format = "{value:,.0f}",
+                               title_text = "",
+                               subtitle_text = "",
+                               caption_text = "",
+                               tooltip,
+                               select_theme = naccho.viz::naccho_minimal_theme,
+                               allow_export = TRUE,
+                               accessible_desc = "") {
 
-create_single_bar <- function(
-    data,
-    type = "column",
-    x_variable,
-    y_variable,
-    tick_amount = 6,
-    color_bars = FALSE,
-    y_label,
-    y_max = 100,
-    y_format = "{value:,.0f}",
-    my_colors = naccho.viz::naccho_colors,
-    title_text = "",
-    subtitle_text = "",
-    caption_text = "",
-    caption_align = "center",
-    legend_enable = FALSE,
-    legend_title = "",
-    tooltip,
-    select_theme = naccho.viz::naccho_minimal_theme,
-    allow_export = TRUE,
-    accessible_desc = ""
-    ) {
-
-  hcoptslang <- getOption("highcharter.lang")
-  hcoptslang$thousandsSep <- ","
-
-  # replace G with B for billions
-  hcoptslang$numericSymbols <- c( " k", " m", " b" ,"t", "P" ,"E")
-  options(highcharter.lang = hcoptslang)
-
-  hc <-
-    highcharter::hchart(
-      data,
-      type = type,
+  hc <- highcharter::highchart() %>%
+    highcharter::hc_add_series(
+      type = "line",
+      data = data,
       highcharter::hcaes(
         x = .data[[x_variable]],
-        y = .data[[y_variable]]
-      ),
-      colorByPoint = color_bars
+        y = .data[[y_variable]],
+        name = .data[[x_variable]]
+      )
     ) %>%
     highcharter::hc_add_dependency(
       name = "modules/accessibility.js"
     ) %>%
     highcharter::hc_plotOptions(
+      series = list(
+        marker = list(
+          enabled = TRUE # gives a marker on each line data point
+        )
+      ),
+      line = list(
+        lineWidth = 4 # Set the desired line thickness
+      ),
       accessibility = list(
         enabled = TRUE,
         description = accessible_desc,
@@ -98,20 +90,20 @@ create_single_bar <- function(
         )
       )
     ) %>%
+    highcharter::hc_colors(
+      colors = my_colors
+    ) %>%
     highcharter::hc_xAxis(
-      title = list(text = "") # x-axis label
+      title = list(text = x_label), # x-axis label
+      categories = unique(as.list(data[[x_variable]]))
     ) %>%
     highcharter::hc_yAxis(
       title = list(text = y_label), # y-axis label
       max = y_max,
-      tickAmount = tick_amount,
       min = 0,
       labels = list(
         format = y_format
       )
-    ) %>%
-    highcharter::hc_colors(
-      colors = my_colors
     ) %>%
     highcharter::hc_title(
       text = title_text, # title text
@@ -124,20 +116,10 @@ create_single_bar <- function(
     highcharter::hc_caption(
       text = caption_text, # source and data notes
       useHTML = TRUE,
-      margin = 20,
-      align = caption_align
+      margin = 20
     ) %>%
     highcharter::hc_legend(
-      enabled = legend_enable, # enabled legend
-      layout = "horizontal",
-      align = "center",
-      verticalAlign = "bottom",
-      itemMarginBottom = 3,
-      itemMarginTop = 3,
-      margin = 22,
-      title = list(
-        text = legend_title
-      )
+      enabled = FALSE # enabled legend
     ) %>%
     highcharter::hc_tooltip(
       pointFormat = tooltip,
@@ -177,38 +159,35 @@ create_single_bar <- function(
         )
       )
     )
+
   return(hc)
 }
 
 
-#' NACCHO Stacked Bar Chart
-#'
-#' @description
-#' Create an accessible stacked bar chart (vertical or horizontal) using a NACCHO theme and the {highcharter} package.
+
+
+#' NACCHO Grouped Line Graph
 #'
 #' @param data the data frame to create the map.
-#' @param type character string; must be "column" or "bar", where "column" displays vertically and "bar" displays horizontally.
 #' @param x_variable object; from the data frame, ideally a character.
 #' @param y_variable numeric; from the data frame.
 #' @param x_group character object; from the data frame.
-#' @param tick_amount numeric; sets the number of ticks, defaults to 6.
-#' @param color_bars boolean, TRUE or FALSE, where TRUE results in each bar being a different color.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param x_label character string; label for the x-axis.
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
 #' @param y_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
-#' @param caption_align character string; options include "left", "center", or "right" where the default is "center".
+#' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
-#' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
 #' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
-#' @return A column or bar chart from highcharter.
+#' @return A line graph from highcharter.
 #' @export
 #'
 #' @examples
@@ -225,13 +204,13 @@ create_single_bar <- function(
 #'   dplyr::arrange(bender)
 
 
-#' create_stacked_bar(
+#' create_grouped_line(
 #'   data = test_data,
-#'   my_colors = c(naccho.viz::naccho_green, naccho.viz::naccho_teal),
 #'   x_variable = "year",
 #'   y_variable = "value",
 #'   x_group = "bender",
 #'   y_label = "Number",
+#'   x_label = "Year",
 #'   y_max = 250,
 #'   legend_enable = TRUE,
 #'   legend_title = "Bender Type",
@@ -239,53 +218,49 @@ create_single_bar <- function(
 #'     "Bender: {point.bender} <br>
 #'  Value: {point.value}"
 #' )
+#'
+create_grouped_line <- function(data,
+                               x_variable,
+                               y_variable,
+                               x_group,
+                               my_colors = naccho.viz::naccho_colors,
+                               x_label,
+                               y_label,
+                               y_max = NULL,
+                               y_format = "{value:,.0f}",
+                               title_text = "",
+                               subtitle_text = "",
+                               caption_text = "",
+                               tooltip,
+                               legend_enable = TRUE,
+                               legend_title = "Category",
+                               select_theme = naccho.viz::naccho_minimal_theme,
+                               allow_export = TRUE,
+                               accessible_desc = "") {
 
-create_stacked_bar <- function(
-    data,
-    type = "column",
-    x_variable,
-    y_variable,
-    x_group,
-    tick_amount = 6,
-    color_bars = FALSE,
-    y_label,
-    y_max = 100,
-    y_format = "{value:,.0f}",
-    my_colors = naccho.viz::naccho_colors,
-    title_text = "",
-    subtitle_text = "",
-    caption_text = "",
-    caption_align = "center",
-    legend_enable = FALSE,
-    legend_title = "",
-    tooltip,
-    select_theme = naccho.viz::naccho_minimal_theme,
-    allow_export = TRUE,
-    accessible_desc = ""
-) {
-
-  hcoptslang <- getOption("highcharter.lang")
-  hcoptslang$thousandsSep <- ","
-
-  # replace G with B for billions
-  hcoptslang$numericSymbols <- c( " k", " m", " b" ,"t", "P" ,"E")
-  options(highcharter.lang = hcoptslang)
-
-  hc <-
-    highcharter::hchart(
-      data,
-      type = type,
+  hc <- highcharter::highchart() %>%
+    highcharter::hc_add_series(
+      type = "line",
+      data = data,
       highcharter::hcaes(
         x = .data[[x_variable]],
         y = .data[[y_variable]],
+        name = .data[[x_variable]],
         group = .data[[x_group]]
-      ),
-      stacking = "normal"
+      )
     ) %>%
     highcharter::hc_add_dependency(
       name = "modules/accessibility.js"
     ) %>%
     highcharter::hc_plotOptions(
+      series = list(
+        marker = list(
+          enabled = TRUE # gives a marker on each line data point
+        )
+      ),
+      line = list(
+        lineWidth = 4 # Set the desired line thickness
+      ),
       accessibility = list(
         enabled = TRUE,
         description = accessible_desc,
@@ -294,20 +269,20 @@ create_stacked_bar <- function(
         )
       )
     ) %>%
+    highcharter::hc_colors(
+      colors = my_colors
+    ) %>%
     highcharter::hc_xAxis(
-      title = list(text = "") # x-axis label
+      title = list(text = x_label), # x-axis label
+      categories = unique(as.list(data[[x_variable]]))
     ) %>%
     highcharter::hc_yAxis(
       title = list(text = y_label), # y-axis label
       max = y_max,
-      tickAmount = tick_amount,
       min = 0,
       labels = list(
         format = y_format
       )
-    ) %>%
-    highcharter::hc_colors(
-      colors = my_colors
     ) %>%
     highcharter::hc_title(
       text = title_text, # title text
@@ -320,8 +295,14 @@ create_stacked_bar <- function(
     highcharter::hc_caption(
       text = caption_text, # source and data notes
       useHTML = TRUE,
-      margin = 20,
-      align = caption_align
+      margin = 20
+    ) %>%
+    highcharter::hc_tooltip(
+      pointFormat = tooltip,
+      useHTML = TRUE
+    ) %>%
+    highcharter::hc_add_theme(
+      select_theme
     ) %>%
     highcharter::hc_legend(
       enabled = legend_enable, # enabled legend
@@ -335,13 +316,6 @@ create_stacked_bar <- function(
       title = list(
         text = legend_title
       )
-    ) %>%
-    highcharter::hc_tooltip(
-      pointFormat = tooltip,
-      useHTML = TRUE
-    ) %>%
-    highcharter::hc_add_theme(
-      select_theme
     ) %>%
     highcharter::hc_exporting(
       enabled = allow_export,
@@ -374,7 +348,7 @@ create_stacked_bar <- function(
         )
       )
     )
-  return(hc)
-}
 
+  return(hc)
+} # closes highcharter function for line graphs
 
