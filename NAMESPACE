@@ -3,6 +3,7 @@
 export("%>%")
 export(create_grouped_line)
 export(create_single_bar)
+export(create_single_item)
 export(create_single_line)
 export(create_stacked_bar)
 importFrom(magrittr,"%>%")
