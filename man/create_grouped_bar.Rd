@@ -89,6 +89,7 @@ test_data <- test_data \%>\%
   dplyr::arrange(bender)
 create_grouped_bar(
   data = test_data,
+  type = "bar",
   my_colors = c(naccho.viz::naccho_green, naccho.viz::naccho_teal),
   x_variable = "year",
   y_variable = "value",
