@@ -76,9 +76,6 @@ create_single_item <- function(
     highcharter::hc_add_dependency(
       name = "modules/accessibility.js"
     ) %>%
-    highcharter::hc_chart(
-      width = 100
-    ) %>%
     highcharter::hc_plotOptions(
       accessibility = list(
         enabled = TRUE,
