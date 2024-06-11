@@ -90,8 +90,7 @@ create_single_item <- function(
       series = list(
         marker = list(
           symbol = 'square'
-        ),
-        rows = 20
+        )
       )
     ) %>%
     highcharter::hc_colors(

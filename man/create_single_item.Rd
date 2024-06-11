@@ -58,12 +58,6 @@ Create an accessible stacked bar chart (vertical or horizontal) using a NACCHO t
 }
 \examples{
 test_data <- base::data.frame(
-  year = c("2019", "2022", "2019", "2022"),
-  value = c(150, 200, 20, 30),
-  bender = c("Fire Bender", "Fire Bender", "Water Bender", "Water Bender")
-)
-
-test_data <- base::data.frame(
   value = c(65, 11, 24),
   bender = c("Fire Bender", "Water Bender", "Air Bender")
 )
