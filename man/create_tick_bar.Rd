@@ -17,6 +17,7 @@ create_tick_bar(
   subtitle_text = "",
   caption_text = "",
   caption_align = "center",
+  enable_labels = TRUE,
   reverse = FALSE,
   tooltip,
   allow_export = TRUE,
@@ -47,6 +48,8 @@ create_tick_bar(
 \item{caption_text}{character string; source and data notes to appear underneath the figure. Defaults to nothing.}
 
 \item{caption_align}{character string; options include "left", "center", or "right" where the default is "center".}
+
+\item{enable_labels}{boolean, TRUE or FALSE, where FALSE removes labels.}
 
 \item{reverse}{boolean, TRUE or FALSE, where TRUE reverses the figure.}
 
