@@ -17,6 +17,7 @@ create_tick_bar(
   subtitle_text = "",
   caption_text = "",
   caption_align = "center",
+  reverse = FALSE,
   tooltip,
   allow_export = TRUE,
   accessible_desc = ""
@@ -46,6 +47,8 @@ create_tick_bar(
 \item{caption_text}{character string; source and data notes to appear underneath the figure. Defaults to nothing.}
 
 \item{caption_align}{character string; options include "left", "center", or "right" where the default is "center".}
+
+\item{reverse}{boolean, TRUE or FALSE, where TRUE reverses the figure.}
 
 \item{tooltip}{character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.}
 

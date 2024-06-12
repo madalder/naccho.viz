@@ -597,6 +597,7 @@ create_grouped_bar <- function(
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
 #' @param caption_align character string; options include "left", "center", or "right" where the default is "center".
+#' @param reverse boolean, TRUE or FALSE, where TRUE reverses the figure.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
@@ -640,6 +641,7 @@ create_tick_bar <- function(
     subtitle_text = "",
     caption_text = "",
     caption_align = "center",
+    reverse = FALSE,
     tooltip,
     allow_export = TRUE,
     accessible_desc = ""
@@ -669,7 +671,8 @@ create_tick_bar <- function(
       )
     ) %>%
     highcharter::hc_xAxis(
-      title = list(text = "") # x-axis label
+      title = list(text = ""), # x-axis label
+      reversed = reverse
     ) %>%
     highcharter::hc_yAxis(
       title = list(text = ""), # y-axis label
@@ -678,7 +681,8 @@ create_tick_bar <- function(
       min = 0,
       labels = list(
         format = y_format
-      )
+      ),
+      reversed = reverse
     ) %>%
     highcharter::hc_colors(
       colors = my_colors
