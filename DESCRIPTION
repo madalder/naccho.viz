@@ -18,6 +18,7 @@ Suggests:
     fontawesome,
     purrr,
     knitr,
+    rsvg,
     stringr,
     rlang
 Depends: 
