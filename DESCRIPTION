@@ -12,13 +12,13 @@ URL: https://github.com/lindsayjorgenson/naccho.viz
 BugReports: https://github.com/lindsayjorgenson/naccho.viz/issues
 Imports: 
     highcharter,
-    magrittr
+    magrittr,
+    rsvg
 Suggests: 
     dplyr,
     fontawesome,
     purrr,
     knitr,
-    rsvg,
     stringr,
     rlang
 Depends: 
