@@ -686,7 +686,7 @@ create_tick_bar <- function(
       min = 0,
       labels = list(
         format = y_format,
-        enabled = enable_labels
+        enabled = FALSE
       ),
       reversed = reverse
     ) %>%
