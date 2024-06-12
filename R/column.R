@@ -525,7 +525,7 @@ create_grouped_bar <- function(
     ) %>%
     highcharter::hc_legend(
       enabled = legend_enable, # enabled legend
-      reversed = TRUE,
+      reversed = FALSE,
       layout = "horizontal",
       align = "center",
       verticalAlign = "bottom",
