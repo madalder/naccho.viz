@@ -597,6 +597,7 @@ create_grouped_bar <- function(
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
 #' @param caption_align character string; options include "left", "center", or "right" where the default is "center".
+#' @param select_theme select a theme, defaults to naccho.viz::naccho_minimalTick_theme.
 #' @param enable_labels boolean, TRUE or FALSE, where FALSE removes labels.
 #' @param reverse boolean, TRUE or FALSE, where TRUE reverses the figure.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
@@ -643,6 +644,7 @@ create_tick_bar <- function(
     caption_text = "",
     caption_align = "center",
     enable_labels = TRUE,
+    select_theme = naccho.viz::naccho_minimalTick_theme,
     reverse = FALSE,
     tooltip,
     allow_export = TRUE,
@@ -718,7 +720,7 @@ create_tick_bar <- function(
       useHTML = TRUE
     ) %>%
     highcharter::hc_add_theme(
-      naccho.viz::naccho_minimalTick_theme
+      select_theme
     ) %>%
     highcharter::hc_exporting(
       enabled = allow_export,

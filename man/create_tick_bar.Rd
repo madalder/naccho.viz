@@ -18,6 +18,7 @@ create_tick_bar(
   caption_text = "",
   caption_align = "center",
   enable_labels = TRUE,
+  select_theme = naccho.viz::naccho_minimalTick_theme,
   reverse = FALSE,
   tooltip,
   allow_export = TRUE,
@@ -50,6 +51,8 @@ create_tick_bar(
 \item{caption_align}{character string; options include "left", "center", or "right" where the default is "center".}
 
 \item{enable_labels}{boolean, TRUE or FALSE, where FALSE removes labels.}
+
+\item{select_theme}{select a theme, defaults to naccho.viz::naccho_minimalTick_theme.}
 
 \item{reverse}{boolean, TRUE or FALSE, where TRUE reverses the figure.}
 
