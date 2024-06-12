@@ -14,7 +14,12 @@ Imports:
     highcharter,
     magrittr
 Suggests: 
-    dplyr
+    dplyr,
+    fontawesome,
+    purrr,
+    knitr,
+    stringr,
+    rlang
 Depends: 
     R (>= 2.10)
 LazyData: true

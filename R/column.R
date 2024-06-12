@@ -1,4 +1,4 @@
-globalVariables(c(".data", "naccho.viz::naccho_minimal_theme", "naccho.viz::naccho_teal", "naccho_green"))
+globalVariables(".data")
 
 
 #' NACCHO Single Bar Chart
