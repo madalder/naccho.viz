@@ -18,3 +18,15 @@
 #'
 #' @source adapted from the NACCHO style guide and made only for use with tick bars
 "naccho_minimalTick_theme"
+
+
+
+#' NACCHO Bare  Theme
+#'
+#' A list containing NACCHO's bare highcharter theme for bare graphs
+#'
+#' @format ## `naccho_bare_theme`
+#' A list with a length of 12
+#'
+#' @source adapted from the NACCHO style guide for bare graphs
+"naccho_bare_theme"
