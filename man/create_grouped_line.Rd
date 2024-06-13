@@ -20,7 +20,7 @@ create_grouped_line(
   tooltip,
   legend_enable = TRUE,
   legend_title = "Category",
-  select_theme = naccho.viz::naccho_minimal_theme,
+  select_theme = naccho.viz::naccho_line_theme,
   allow_export = TRUE,
   accessible_desc = ""
 )
@@ -56,7 +56,7 @@ create_grouped_line(
 
 \item{legend_title}{character string; title of the legend, defaults to nothing unless defined.}
 
-\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.}
+\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_line_theme and naccho_normal.}
 
 \item{allow_export}{boolean, TRUE or FALSE, where true allows the visualization to be exported.}
 

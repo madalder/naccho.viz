@@ -13,7 +13,7 @@
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_line_theme and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -56,7 +56,7 @@ create_single_line <- function(data,
                                subtitle_text = "",
                                caption_text = "",
                                tooltip,
-                               select_theme = naccho.viz::naccho_minimal_theme,
+                               select_theme = naccho.viz::naccho_line_theme,
                                allow_export = TRUE,
                                accessible_desc = "") {
 
@@ -183,7 +183,7 @@ create_single_line <- function(data,
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_line_theme and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -234,7 +234,7 @@ create_grouped_line <- function(data,
                                tooltip,
                                legend_enable = TRUE,
                                legend_title = "Category",
-                               select_theme = naccho.viz::naccho_minimal_theme,
+                               select_theme = naccho.viz::naccho_line_theme,
                                allow_export = TRUE,
                                accessible_desc = "") {
 

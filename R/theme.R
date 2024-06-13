@@ -30,3 +30,16 @@
 #'
 #' @source adapted from the NACCHO style guide for bare graphs
 "naccho_bare_theme"
+
+
+
+#' NACCHO Line Theme
+#'
+#' A list containing NACCHO's line highcharter theme for line graphs
+#'
+#' @format ## `naccho_bare_theme`
+#' A list with a length of 12
+#'
+#' @source adapted from the NACCHO style guide for line graphs
+"naccho_line_theme"
+
