@@ -20,13 +20,13 @@
 #'
 #' test_data <- data.frame(
 #'  avatar = c("Aang", "Korra", "Kyoshi"),
-#'  value = c(33, 23, 44)
+#'  n = c(33, 23, 44)
 #' )
 
 #' create_pie(
 #'  data = test_data,
 #'  variable = "avatar",
-#'  value = "value"
+#'  value = "n"
 #' )
 #'
 #'
@@ -44,7 +44,8 @@ create_pie <- function(data,
                        accessible_desc = "") {
 
   data <- data %>%
-    dplyr::mutate(percent = !!rlang::sym(value))
+    dplyr::mutate(perc = !!rlang::sym(value)) %>%
+    dplyr::mutate(cat = !!rlang::sym(variable))
 
   hc <- highcharter::highchart() %>%
     highcharter::hc_add_series(
@@ -68,7 +69,7 @@ create_pie <- function(data,
           cursor = "pointer", # Set cursor style for selectable points
           dataLabels = list(
             enabled = TRUE,
-            format = "{point.percent}%",
+            format = "{point.perc}%",
             overflow = TRUE,
             distance = 5,
             padding = 2,
@@ -109,7 +110,8 @@ create_pie <- function(data,
       useHTML = TRUE,
       headerFormat = "",
       pointFormat = "<div style='text-align: center;'>
-                    <b>{point.value}</b>",
+                    {point.cat}<br>
+                    <b>{point.perc}%</b></div>",
       # positioner = JS(
       #   "function () {
       #         xp =  this.chart.chartWidth/2 - this.label.width/2

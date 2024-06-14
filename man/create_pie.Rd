@@ -54,12 +54,12 @@ NACHCO Pie Chart
 
 test_data <- data.frame(
  avatar = c("Aang", "Korra", "Kyoshi"),
- value = c(33, 23, 44)
+ n = c(33, 23, 44)
 )
 create_pie(
  data = test_data,
  variable = "avatar",
- value = "value"
+ value = "n"
 )
 
 
