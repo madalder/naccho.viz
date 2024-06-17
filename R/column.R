@@ -157,7 +157,6 @@ create_single_bar <- function(
       sourceHeight = 700, # sets height of download
       sourceWidth = 1200, # sets width of download
       allowHTML = TRUE,
-      url = "https://exporter.opifex.org", #serve owned by John Coene
       buttons = list(
         contextButton = list(
           symbol = "menu",
@@ -354,7 +353,6 @@ create_stacked_bar <- function(
       sourceHeight = 700, # sets height of download
       sourceWidth = 1200, # sets width of download
       allowHTML = TRUE,
-      url = "https://exporter.opifex.org", #serve owned by John Coene
       buttons = list(
         contextButton = list(
           symbol = "menu",
@@ -554,7 +552,6 @@ create_grouped_bar <- function(
       sourceHeight = 700, # sets height of download
       sourceWidth = 1200, # sets width of download
       allowHTML = TRUE,
-      url = "https://exporter.opifex.org", #serve owned by John Coene
       buttons = list(
         contextButton = list(
           symbol = "menu",
@@ -733,7 +730,6 @@ create_tick_bar <- function(
       sourceHeight = 700, # sets height of download
       sourceWidth = 1200, # sets width of download
       allowHTML = TRUE,
-      url = "https://exporter.opifex.org", #serve owned by John Coene
       buttons = list(
         contextButton = list(
           symbol = "menu",

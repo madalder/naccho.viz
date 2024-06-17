@@ -141,7 +141,6 @@ create_single_item <- function(
       sourceHeight = 700, # sets height of download
       sourceWidth = 1200, # sets width of download
       allowHTML = TRUE,
-      url = "https://exporter.opifex.org", #serve owned by John Coene
       buttons = list(
         contextButton = list(
           symbol = "menu",
@@ -397,7 +396,6 @@ create_icon_item <- function(
       sourceHeight = 700, # sets height of download
       sourceWidth = 1200, # sets width of download
       allowHTML = TRUE,
-      url = "https://exporter.opifex.org", #serve owned by John Coene
       buttons = list(
         contextButton = list(
           symbol = "menu",
