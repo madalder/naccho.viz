@@ -100,7 +100,8 @@ create_pie <- function(data,
     highcharter::hc_caption(
       text = caption_text, # source and data notes
       useHTML = TRUE,
-      margin = 20
+      margin = 20,
+      align = "center"
     ) %>%
     highcharter::hc_colors(
       colors = my_colors
