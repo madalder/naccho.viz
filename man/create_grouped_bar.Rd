@@ -22,6 +22,7 @@ create_grouped_bar(
   caption_align = "center",
   legend_enable = FALSE,
   legend_title = "",
+  legend_reverse = FALSE,
   tooltip,
   select_theme = naccho.viz::naccho_minimal_theme,
   allow_export = TRUE,
@@ -62,6 +63,8 @@ create_grouped_bar(
 \item{legend_enable}{boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.}
 
 \item{legend_title}{character string; title of the legend, defaults to nothing unless defined.}
+
+\item{legend_reverse}{boolean, TRUE or FALSE, where TRUE reverses the legend.}
 
 \item{tooltip}{character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.}
 

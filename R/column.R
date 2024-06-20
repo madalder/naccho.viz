@@ -401,6 +401,7 @@ create_stacked_bar <- function(
 #' @param caption_align character string; options include "left", "center", or "right" where the default is "center".
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
+#' @param legend_reverse boolean, TRUE or FALSE, where TRUE reverses the legend.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
 #' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
@@ -457,6 +458,7 @@ create_grouped_bar <- function(
     caption_align = "center",
     legend_enable = FALSE,
     legend_title = "",
+    legend_reverse = FALSE,
     tooltip,
     select_theme = naccho.viz::naccho_minimal_theme,
     allow_export = TRUE,
@@ -523,7 +525,7 @@ create_grouped_bar <- function(
     ) %>%
     highcharter::hc_legend(
       enabled = legend_enable, # enabled legend
-      reversed = FALSE,
+      reversed = legend_reverse,
       layout = "horizontal",
       align = "center",
       verticalAlign = "bottom",
