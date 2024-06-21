@@ -2,6 +2,7 @@
 
 export("%>%")
 export(add_logo)
+export(create_cat_map)
 export(create_grouped_bar)
 export(create_grouped_line)
 export(create_icon_item)
