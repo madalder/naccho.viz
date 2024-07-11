@@ -86,6 +86,9 @@ create_single_bar <- function(
       ),
       colorByPoint = color_bars
     ) %>%
+    highcharter::hc_series(
+      id = "series_one"
+      ) %>%  # Needed when using with proxy
     highcharter::hc_add_dependency(
       name = "modules/accessibility.js"
     ) %>%
