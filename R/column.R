@@ -77,18 +77,15 @@ create_single_bar <- function(
   options(highcharter.lang = hcoptslang)
 
   hc <-
-    highcharter::hchart(
-      data,
-      type = type,
-      highcharter::hcaes(
-        x = .data[[x_variable]],
-        y = .data[[y_variable]]
-      ),
+    highcharter::highchart() %>%
+    highcharter::hc_chart(type = type) %>%
+    highcharter::hc_add_series(
+      data = data %>%
+        dplyr::select(.data[[x_variable]], .data[[y_variable]]) %>%
+        highcharter::list_parse2(),
+      id = "series_one",
       colorByPoint = color_bars
     ) %>%
-    highcharter::hc_series(
-      id = "series_one"
-      ) %>%  # Needed when using with proxy
     highcharter::hc_add_dependency(
       name = "modules/accessibility.js"
     ) %>%
