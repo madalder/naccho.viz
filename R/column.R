@@ -77,13 +77,13 @@ create_single_bar <- function(
   options(highcharter.lang = hcoptslang)
 
   hc <-
-    highcharter::highchart() %>%
-    highcharter::hc_chart(type = type) %>%
-    highcharter::hc_add_series(
-      data = data %>%
-        dplyr::select(.data[[x_variable]], .data[[y_variable]]) %>%
-        highcharter::list_parse2(),
-      id = "series_one",
+    highcharter::hchart(
+      data,
+      type = type,
+      highcharter::hcaes(
+        x = .data[[x_variable]],
+        y = .data[[y_variable]]
+      ),
       colorByPoint = color_bars
     ) %>%
     highcharter::hc_add_dependency(
