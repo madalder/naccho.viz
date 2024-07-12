@@ -43,3 +43,14 @@
 #' @source adapted from the NACCHO style guide for line graphs
 "naccho_line_theme"
 
+
+
+#' NACCHO Basic Theme
+#'
+#' A list containing NACCHO's basic highcharter theme
+#'
+#' @format ## `basic_theme`
+#' A list with a length of 12
+#'
+#' @source adapted from the NACCHO minimal theme, add axis lines
+"basic_theme"
