@@ -48,12 +48,12 @@ basic_theme <-
     ),
     yAxis = list(
       gridLineWidth = 1,
-      gridLineColor = "#666", # color of the grid lines
+      gridLineColor = "#E0E0E0", # color of the grid lines
       lineWidth = 0, # horizontal line parallel on y-axis
       minorTicks = FALSE, # allows minor ticks if set to true
       tickWidth = 1,
       tickLength = 8,
-      tickColor = "#666",
+      tickColor = "#E0E0E0",
       tickmarkPlacement = "between",
       labels = list(
         style = list(
