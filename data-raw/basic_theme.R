@@ -28,8 +28,10 @@ basic_theme <-
         fontSize = "13px")
     ),
     xAxis = list(
-      lineColor = naccho.viz::naccho_grey,
-      lineWidth = 0,
+      lineColor = "#E0E0E0",
+      gridLineWidth = 1,
+      gridLineColor = "#E0E0E0", # color of the grid lines
+      lineWidth = 1,
       labels = list(
         style = list(
           fontFamily = "Heebo",
@@ -47,13 +49,13 @@ basic_theme <-
       )
     ),
     yAxis = list(
-      gridLineWidth = 1,
+      gridLineWidth = 0,
       gridLineColor = "#E0E0E0", # color of the grid lines
       lineWidth = 0, # horizontal line parallel on y-axis
       minorTicks = FALSE, # allows minor ticks if set to true
       tickWidth = 1,
       tickLength = 8,
-      tickColor = "#E0E0E0",
+      tickColor = naccho.viz::naccho_grey,
       tickmarkPlacement = "between",
       labels = list(
         style = list(
