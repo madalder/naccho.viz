@@ -96,8 +96,8 @@ naccho_minimal_theme <-
       style = list(
         fontFamily = "Heebo",
         fontSize = "16px",
-        fontWeight = "600",
-        lineHeight = "20px")
+        fontWeight = "400",
+        lineHeight = "18px")
     ),
     itemHoverStyle = list(
       color = naccho.viz::naccho_green
