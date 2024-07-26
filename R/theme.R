@@ -54,3 +54,15 @@
 #'
 #' @source adapted from the NACCHO minimal theme, add axis lines
 "basic_theme"
+
+
+
+#' NACCHO Histogram Theme
+#'
+#' A list containing NACCHO's histogram theme
+#'
+#' @format ## `hist_theme`
+#' A list with a length of 12
+#'
+#' @source adapted from the NACCHO basic theme, remove bar spacing
+"hist_theme"

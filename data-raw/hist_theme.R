@@ -1,6 +1,6 @@
-## code to prepare `naccho_minimal_theme` dataset goes here
+## code to prepare `hist_theme` dataset goes here
 
-naccho_minimal_theme <-
+hist_theme <-
   highcharter::hc_theme(
     colors = naccho.viz::naccho_colors,
     chart = list(
@@ -29,11 +29,12 @@ naccho_minimal_theme <-
     ),
     xAxis = list(
       lineColor = naccho.viz::naccho_grey,
-      lineWidth = 0,
+      gridLineWidth = 0,
+      lineWidth = 1,
       labels = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "20px",
+          fontSize = "17px",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::naccho_grey)
@@ -47,14 +48,13 @@ naccho_minimal_theme <-
       )
     ),
     yAxis = list(
-      gridLineWidth = 0,
-      gridLineColor = "#666", # color of the grid lines
+      gridLineWidth = .8,
+      gridLineColor = "#E0E0E0", # color of the grid lines
       lineWidth = 0, # horizontal line parallel on y-axis
       minorTicks = FALSE, # allows minor ticks if set to true
-      lineWidth = 0,
-      tickWidth = 1,
-      tickLength = 8,
-      tickColor = naccho.viz::naccho_grey,
+      tickWidth = .8,
+      tickLength = 2,
+      tickColor = "#E0E0E0",
       tickmarkPlacement = "between",
       labels = list(
         style = list(
@@ -96,8 +96,8 @@ naccho_minimal_theme <-
       style = list(
         fontFamily = "Heebo",
         fontSize = "16px",
-        fontWeight = "400",
-        lineHeight = "18px")
+        fontWeight = "600",
+        lineHeight = "20px")
     ),
     itemHoverStyle = list(
       color = naccho.viz::naccho_green
@@ -105,12 +105,11 @@ naccho_minimal_theme <-
     plotOptions = list(
       series = list(
         pointPadding = 0,
-        groupPadding = 0.2,
+        groupPadding = 0,
         borderWidth = 0
       )
     )
   )
 
-usethis::use_data(naccho_minimal_theme, overwrite = TRUE, internal = TRUE)
-
-save(naccho_minimal_theme, file = "data/naccho_minimal_theme.rda")
+usethis::use_data(hist_theme, overwrite = TRUE)
+save(hist_theme, file = "data/hist_theme.rda")

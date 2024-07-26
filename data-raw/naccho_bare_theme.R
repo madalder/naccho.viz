@@ -1,7 +1,5 @@
 ## code to prepare `naccho_bare_theme` dataset goes here
 
-usethis::use_data(naccho_bare_theme, overwrite = TRUE)
-
 naccho_bare_theme <-
   highcharter::hc_theme(
     colors = naccho.viz::naccho_colors,
@@ -108,6 +106,6 @@ naccho_bare_theme <-
   )
 
 
-use_data(naccho_bare_theme, overwrite = TRUE, internal = TRUE)
+usethis::use_data(naccho_bare_theme, overwrite = TRUE, internal = TRUE)
 
 save(naccho_bare_theme, file = "data/naccho_bare_theme.rda")
