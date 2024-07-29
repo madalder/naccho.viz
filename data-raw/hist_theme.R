@@ -30,6 +30,8 @@ hist_theme <-
     xAxis = list(
       lineColor = naccho.viz::naccho_grey,
       gridLineWidth = 0,
+      tickWidth = .8,
+      tickLength = 1,
       lineWidth = 1,
       labels = list(
         style = list(
