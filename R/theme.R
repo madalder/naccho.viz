@@ -66,3 +66,16 @@
 #'
 #' @source adapted from the NACCHO basic theme, remove bar spacing
 "hist_theme"
+
+
+
+#' NACCHO Bar Graph with Positive and Negative Values Theme
+#'
+#' A list containing NACCHO's bar graph theme with a plotline at "0"
+#'
+#' @format ## `bar_pos_neg_theme`
+#' A list with a length of 12
+#'
+#' @source adapted from the NACCHO basic theme
+"bar_pos_neg_theme"
+
