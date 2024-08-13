@@ -34,9 +34,9 @@ basic_theme <-
       labels = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "14px",
+          fontSize = "17px",
           fontWeight = "bold",
-          textOverflow = 'ellipse',
+          textOverflow = 'none',
           color = naccho.viz::naccho_grey)
       ),
       title = list(
@@ -101,15 +101,14 @@ basic_theme <-
     ),
     itemHoverStyle = list(
       color = naccho.viz::naccho_green
+    ),
+    plotOptions = list(
+      series = list(
+        pointPadding = 0,
+        groupPadding = 0.2,
+        borderWidth = 0
+      )
     )
-    # ,
-    # plotOptions = list(
-    #   series = list(
-    #     pointPadding = 0,
-    #     groupPadding = 0.2,
-    #     borderWidth = 0
-    #   )
-    # )
   )
 
 use_data(basic_theme, overwrite = TRUE, internal = TRUE)

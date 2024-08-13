@@ -34,7 +34,7 @@ bar_pos_neg_theme <-
       labels = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "17px",
+          fontSize = "14px",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::naccho_grey)
@@ -48,17 +48,18 @@ bar_pos_neg_theme <-
       )
     ),
     yAxis = list(
-      plotLines = list(
-        list(
-          value = 0,
-          color = "#fff",
-          width = 2,
-          zIndex = 5
-        )
-      ),
+      # plotLines = list(
+      #   list(
+      #     value = 0,
+      #     color = "#fff",
+      #     width = 2,
+      #     zIndex = 5
+      #   )
+      # ),
       gridLineWidth = 0,
       gridLineColor = "#E0E0E0", # color of the grid lines
-      lineWidth = 0, # horizontal line parallel on y-axis
+      lineWidth = .5, # horizontal line parallel on y-axis
+      lineColor = naccho.viz::naccho_grey,
       minorTicks = FALSE, # allows minor ticks if set to true
       tickWidth = .8,
       tickLength = 2,
