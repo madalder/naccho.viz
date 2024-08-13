@@ -101,7 +101,8 @@ bar_pos_neg_theme <-
     ),
     tooltip = list(
       padding = 10,
-      borderRadius = 20,
+      borderRadius = 0,
+      borderWidth = 0,
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
