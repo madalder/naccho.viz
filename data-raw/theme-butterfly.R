@@ -1,6 +1,6 @@
-## code to prepare `bar_pos_neg_theme` dataset goes here
+## code to prepare `butterfly` dataset goes here
 
-bar_pos_neg_theme <-
+butterfly <-
   highcharter::hc_theme(
     colors = naccho.viz::naccho_colors,
     chart = list(
@@ -9,7 +9,7 @@ bar_pos_neg_theme <-
       fontFamily = "Heebo"),
     title = list(
       style = list(
-        color = naccho.viz::naccho_blue,
+        color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
         fontSize = "20px")
@@ -111,7 +111,7 @@ bar_pos_neg_theme <-
         lineHeight = "20px")
     ),
     itemHoverStyle = list(
-      color = naccho.viz::naccho_green
+      color = naccho.viz::green
     ),
     plotOptions = list(
       series = list(
@@ -122,4 +122,4 @@ bar_pos_neg_theme <-
     )
   )
 
-usethis::use_data(bar_pos_neg_theme, overwrite = TRUE)
+usethis::use_data(butterfly, overwrite = TRUE)

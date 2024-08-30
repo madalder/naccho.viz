@@ -1,6 +1,6 @@
-## code to prepare `naccho_minimal_theme` dataset goes here
+## code to prepare `tick` dataset goes here
 
-naccho_minimal_theme <-
+tick <-
   highcharter::hc_theme(
     colors = naccho.viz::naccho_colors,
     chart = list(
@@ -9,16 +9,16 @@ naccho_minimal_theme <-
       fontFamily = "Heebo"),
     title = list(
       style = list(
-        color = naccho.viz::naccho_blue,
+        color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
         fontSize = "20px")
     ),
     subtitle = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::navy,
         fontFamily = "Heebo",
-        fontWeight = "400",
+        fontWeight = "600",
         fontSize = "15px")
     ),
     caption = list(
@@ -29,39 +29,34 @@ naccho_minimal_theme <-
     ),
     xAxis = list(
       lineColor = naccho.viz::naccho_grey,
-      lineWidth = 0,
       labels = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "20px",
+          fontSize = "22px",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::naccho_grey)
       ),
       title = list(
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "400",
           fontSize = "15px")
       )
     ),
     yAxis = list(
-      gridLineWidth = 0,
-      gridLineColor = "#666", # color of the grid lines
+      gridLineWidth = 12,
+      gridLineColor = "#fff", # color of the grid lines
+      gridZIndex = 4,
       lineWidth = 0, # horizontal line parallel on y-axis
       minorTicks = FALSE, # allows minor ticks if set to true
-      lineWidth = 0,
-      tickWidth = 1,
-      tickLength = 8,
+      tickWidth = 0,
+      tickLength = 0,
       tickColor = naccho.viz::naccho_grey,
       tickmarkPlacement = "between",
       labels = list(
-        style = list(
-          fontFamily = "Heebo",
-          fontSize = "15px",
-          fontWeight = "normal",
-          color = naccho.viz::naccho_grey)
+        enabled = FALSE
       ),
       title = list(
         align = "high",
@@ -69,16 +64,16 @@ naccho_minimal_theme <-
         offset = 14,
         y = 25,
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::navy,
           fontFamily = "Heebo",
-          fontWeight = "700",
-          fontSize = "14px")
+          fontWeight = "500",
+          fontSize = "15px")
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::navy,
         fontSize = "17px",
         fontWeight = "normal",
         color = "#666"),
@@ -96,21 +91,18 @@ naccho_minimal_theme <-
       style = list(
         fontFamily = "Heebo",
         fontSize = "16px",
-        fontWeight = "400",
-        lineHeight = "18px")
+        lineHeight = "20px")
     ),
     itemHoverStyle = list(
-      color = naccho.viz::naccho_green
+      color = naccho.viz::green
     ),
     plotOptions = list(
-      series = list(
-        pointPadding = 0,
-        groupPadding = 0.2,
+      bar = list(
         borderWidth = 0
       )
     )
   )
 
-usethis::use_data(naccho_minimal_theme, overwrite = TRUE, internal = TRUE)
 
-save(naccho_minimal_theme, file = "data/naccho_minimal_theme.rda")
+
+usethis::use_data(tick, overwrite = TRUE)

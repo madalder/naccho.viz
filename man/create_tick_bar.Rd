@@ -12,13 +12,13 @@ create_tick_bar(
   x_group,
   size = 400,
   y_format = "{value:,.0f}",
-  my_colors = c(naccho.viz::naccho_offwhite, naccho.viz::naccho_teal),
+  my_colors = c(naccho.viz::naccho_offwhite, naccho.viz::teal),
   title_text = "",
   subtitle_text = "",
   caption_text = "",
   caption_align = "center",
   enable_labels = TRUE,
-  select_theme = naccho.viz::naccho_minimalTick_theme,
+  select_theme = naccho.viz::tick,
   reverse = FALSE,
   tooltip,
   allow_export = TRUE,
@@ -52,7 +52,7 @@ create_tick_bar(
 
 \item{enable_labels}{boolean, TRUE or FALSE, where FALSE removes labels.}
 
-\item{select_theme}{select a theme, defaults to naccho.viz::naccho_minimalTick_theme.}
+\item{select_theme}{select a theme, defaults to naccho.viz::tick.}
 
 \item{reverse}{boolean, TRUE or FALSE, where TRUE reverses the figure.}
 

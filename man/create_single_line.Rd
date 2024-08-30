@@ -17,7 +17,7 @@ create_single_line(
   subtitle_text = "",
   caption_text = "",
   tooltip,
-  select_theme = naccho.viz::naccho_line_theme,
+  select_theme = naccho.viz::line,
   allow_export = TRUE,
   accessible_desc = ""
 )
@@ -47,7 +47,7 @@ create_single_line(
 
 \item{tooltip}{character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.}
 
-\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_line_theme and naccho_normal.}
+\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::line and naccho_normal.}
 
 \item{allow_export}{boolean, TRUE or FALSE, where true allows the visualization to be exported.}
 

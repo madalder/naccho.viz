@@ -23,7 +23,7 @@ globalVariables(".data")
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -64,7 +64,7 @@ create_single_bar <- function(
     legend_enable = FALSE,
     legend_title = "",
     tooltip,
-    select_theme = naccho.viz::naccho_minimal_theme,
+    select_theme = naccho.viz::minimal,
     allow_export = TRUE,
     accessible_desc = ""
     ) {
@@ -161,8 +161,8 @@ create_single_bar <- function(
         contextButton = list(
           symbol = "menu",
           symbolStrokeWidth = 2,
-          symbolFill = naccho.viz::naccho_teal,
-          symbolStroke = naccho.viz::naccho_teal,
+          symbolFill = naccho.viz::teal,
+          symbolStroke = naccho.viz::teal,
           menuItems = c("printChart",
                         "separator",
                         "downloadPNG",
@@ -203,7 +203,7 @@ create_single_bar <- function(
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -226,7 +226,7 @@ create_single_bar <- function(
 
 #' create_stacked_bar(
 #'   data = test_data,
-#'   my_colors = c(naccho.viz::naccho_green, naccho.viz::naccho_teal),
+#'   my_colors = c(naccho.viz::green, naccho.viz::teal),
 #'   x_variable = "year",
 #'   y_variable = "value",
 #'   x_group = "bender",
@@ -258,7 +258,7 @@ create_stacked_bar <- function(
     legend_enable = FALSE,
     legend_title = "",
     tooltip,
-    select_theme = naccho.viz::naccho_minimal_theme,
+    select_theme = naccho.viz::minimal,
     allow_export = TRUE,
     accessible_desc = ""
 ) {
@@ -357,8 +357,8 @@ create_stacked_bar <- function(
         contextButton = list(
           symbol = "menu",
           symbolStrokeWidth = 2,
-          symbolFill = naccho.viz::naccho_teal,
-          symbolStroke = naccho.viz::naccho_teal,
+          symbolFill = naccho.viz::teal,
+          symbolStroke = naccho.viz::teal,
           menuItems = c("printChart",
                         "separator",
                         "downloadPNG",
@@ -403,7 +403,7 @@ create_stacked_bar <- function(
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param legend_reverse boolean, TRUE or FALSE, where TRUE reverses the legend.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -427,7 +427,7 @@ create_stacked_bar <- function(
 #' create_grouped_bar(
 #'   data = test_data,
 #'   type = "bar",
-#'   my_colors = c(naccho.viz::naccho_green, naccho.viz::naccho_teal),
+#'   my_colors = c(naccho.viz::green, naccho.viz::teal),
 #'   x_variable = "year",
 #'   y_variable = "value",
 #'   x_group = "bender",
@@ -460,7 +460,7 @@ create_grouped_bar <- function(
     legend_title = "",
     legend_reverse = FALSE,
     tooltip,
-    select_theme = naccho.viz::naccho_minimal_theme,
+    select_theme = naccho.viz::minimal,
     allow_export = TRUE,
     accessible_desc = ""
 ) {
@@ -558,8 +558,8 @@ create_grouped_bar <- function(
         contextButton = list(
           symbol = "menu",
           symbolStrokeWidth = 2,
-          symbolFill = naccho.viz::naccho_teal,
-          symbolStroke = naccho.viz::naccho_teal,
+          symbolFill = naccho.viz::teal,
+          symbolStroke = naccho.viz::teal,
           menuItems = c("printChart",
                         "separator",
                         "downloadPNG",
@@ -596,7 +596,7 @@ create_grouped_bar <- function(
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
 #' @param caption_align character string; options include "left", "center", or "right" where the default is "center".
-#' @param select_theme select a theme, defaults to naccho.viz::naccho_minimalTick_theme.
+#' @param select_theme select a theme, defaults to naccho.viz::tick.
 #' @param enable_labels boolean, TRUE or FALSE, where FALSE removes labels.
 #' @param reverse boolean, TRUE or FALSE, where TRUE reverses the figure.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
@@ -637,13 +637,13 @@ create_tick_bar <- function(
     x_group,
     size = 400,
     y_format = "{value:,.0f}",
-    my_colors = c(naccho.viz::naccho_offwhite, naccho.viz::naccho_teal),
+    my_colors = c(naccho.viz::naccho_offwhite, naccho.viz::teal),
     title_text = "",
     subtitle_text = "",
     caption_text = "",
     caption_align = "center",
     enable_labels = TRUE,
-    select_theme = naccho.viz::naccho_minimalTick_theme,
+    select_theme = naccho.viz::tick,
     reverse = FALSE,
     tooltip,
     allow_export = TRUE,
@@ -736,8 +736,8 @@ create_tick_bar <- function(
         contextButton = list(
           symbol = "menu",
           symbolStrokeWidth = 2,
-          symbolFill = naccho.viz::naccho_teal,
-          symbolStroke = naccho.viz::naccho_teal,
+          symbolFill = naccho.viz::teal,
+          symbolStroke = naccho.viz::teal,
           menuItems = c("printChart",
                         "separator",
                         "downloadPNG",

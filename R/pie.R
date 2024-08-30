@@ -124,7 +124,7 @@ create_pie <- function(data,
     ) %>%
     # adding the theme
     highcharter::hc_add_theme(
-      naccho.viz::naccho_minimal_theme
+      naccho.viz::minimal
     ) %>%
     highcharter::hc_exporting(
       enabled = allow_export,
@@ -142,8 +142,8 @@ create_pie <- function(data,
         contextButton = list(
           symbol = "menu",
           symbolStrokeWidth = 2,
-          symbolFill = naccho.viz::naccho_teal,
-          symbolStroke = naccho.viz::naccho_teal,
+          symbolFill = naccho.viz::teal,
+          symbolStroke = naccho.viz::teal,
           menuItems = c("printChart",
                         "separator",
                         "downloadPNG",

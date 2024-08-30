@@ -2,11 +2,11 @@
 #'
 #' A hex code for NACCHO teal
 #'
-#' @format ## `naccho_teal`
+#' @format ## `teal`
 #' A single vector as a hex code
 #'
 #' @source adapted from the NACCHO style guide for greater accessibility
-"naccho_teal"
+"teal"
 
 
 
@@ -14,11 +14,11 @@
 #'
 #' A hex code for NACCHO orange
 #'
-#' @format ## `naccho_orange`
+#' @format ## `terracotta`
 #' A single vector as a hex code
 #'
 #' @source adapted from the NACCHO style guide for greater accessibility
-"naccho_orange"
+"terracotta"
 
 
 
@@ -26,11 +26,11 @@
 #'
 #' A hex code for NACCHO blue
 #'
-#' @format ## `naccho_blue`
+#' @format ## `navy`
 #' A single vector as a hex code
 #'
 #' @source adapted from the NACCHO style guide for greater accessibility
-"naccho_blue"
+"navy"
 
 
 
@@ -50,11 +50,11 @@
 #'
 #' A hex code for NACCHO green
 #'
-#' @format ## `naccho_green`
+#' @format ## `green`
 #' A single vector as a hex code
 #'
 #' @source adapted from the NACCHO style guide for greater accessibility
-"naccho_green"
+"green"
 
 
 
@@ -62,11 +62,11 @@
 #'
 #' A hex code for NACCHO pink
 #'
-#' @format ## `naccho_pink`
+#' @format ## `pink`
 #' A single vector as a hex code
 #'
 #' @source adapted from the NACCHO style guide for greater accessibility
-"naccho_pink"
+"pink"
 
 
 

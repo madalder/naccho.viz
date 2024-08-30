@@ -16,14 +16,14 @@ create_icon_item(
   legend_enable = FALSE,
   legend_title = "",
   tooltip,
-  select_theme = naccho.viz::naccho_minimal_theme,
+  select_theme = naccho.viz::minimal,
   allow_export = TRUE,
   accessible_desc = "",
-  color_one = naccho.viz::naccho_teal,
-  color_two = naccho.viz::naccho_green,
-  color_thee = naccho.viz::naccho_blue,
-  color_four = naccho.viz::naccho_pink,
-  color_five = naccho.viz::naccho_orange
+  color_one = naccho.viz::teal,
+  color_two = naccho.viz::green,
+  color_thee = naccho.viz::navy,
+  color_four = naccho.viz::pink,
+  color_five = naccho.viz::terracotta
 )
 }
 \arguments{
@@ -49,7 +49,7 @@ create_icon_item(
 
 \item{tooltip}{character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.}
 
-\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.}
+\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.}
 
 \item{allow_export}{boolean, TRUE or FALSE, where true allows the visualization to be exported.}
 

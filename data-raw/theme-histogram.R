@@ -1,6 +1,6 @@
-## code to prepare `hist_theme` dataset goes here
+## code to prepare `histogram` dataset goes here
 
-hist_theme <-
+histogram <-
   highcharter::hc_theme(
     colors = naccho.viz::naccho_colors,
     chart = list(
@@ -9,7 +9,7 @@ hist_theme <-
       fontFamily = "Heebo"),
     title = list(
       style = list(
-        color = naccho.viz::naccho_blue,
+        color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
         fontSize = "20px")
@@ -103,7 +103,7 @@ hist_theme <-
         lineHeight = "20px")
     ),
     itemHoverStyle = list(
-      color = naccho.viz::naccho_green
+      color = naccho.viz::green
     ),
     plotOptions = list(
       series = list(
@@ -114,5 +114,4 @@ hist_theme <-
     )
   )
 
-usethis::use_data(hist_theme, overwrite = TRUE)
-save(hist_theme, file = "data/hist_theme.rda")
+usethis::use_data(histogram, overwrite = TRUE)

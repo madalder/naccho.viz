@@ -14,7 +14,7 @@
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -56,7 +56,7 @@ create_single_item <- function(
     legend_enable = FALSE,
     legend_title = "",
     tooltip,
-    select_theme = naccho.viz::naccho_minimal_theme,
+    select_theme = naccho.viz::minimal,
     allow_export = TRUE,
     accessible_desc = ""
 ) {
@@ -145,8 +145,8 @@ create_single_item <- function(
         contextButton = list(
           symbol = "menu",
           symbolStrokeWidth = 2,
-          symbolFill = naccho.viz::naccho_teal,
-          symbolStroke = naccho.viz::naccho_teal,
+          symbolFill = naccho.viz::teal,
+          symbolStroke = naccho.viz::teal,
           menuItems = c("printChart",
                         "separator",
                         "downloadPNG",
@@ -180,7 +180,7 @@ create_single_item <- function(
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #' @param color_one hex value or named color, first color.
@@ -220,14 +220,14 @@ create_icon_item <- function(
     legend_enable = FALSE,
     legend_title = "",
     tooltip,
-    select_theme = naccho.viz::naccho_minimal_theme,
+    select_theme = naccho.viz::minimal,
     allow_export = TRUE,
     accessible_desc = "",
-    color_one = naccho.viz::naccho_teal,
-    color_two = naccho.viz::naccho_green,
-    color_thee = naccho.viz::naccho_blue,
-    color_four = naccho.viz::naccho_pink,
-    color_five = naccho.viz::naccho_orange
+    color_one = naccho.viz::teal,
+    color_two = naccho.viz::green,
+    color_thee = naccho.viz::navy,
+    color_four = naccho.viz::pink,
+    color_five = naccho.viz::terracotta
 ) {
 
 
@@ -400,8 +400,8 @@ create_icon_item <- function(
         contextButton = list(
           symbol = "menu",
           symbolStrokeWidth = 2,
-          symbolFill = naccho.viz::naccho_teal,
-          symbolStroke = naccho.viz::naccho_teal,
+          symbolFill = naccho.viz::teal,
+          symbolStroke = naccho.viz::teal,
           menuItems = c("printChart",
                         "separator",
                         "downloadPNG",

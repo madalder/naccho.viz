@@ -24,7 +24,7 @@ create_grouped_bar(
   legend_title = "",
   legend_reverse = FALSE,
   tooltip,
-  select_theme = naccho.viz::naccho_minimal_theme,
+  select_theme = naccho.viz::minimal,
   allow_export = TRUE,
   accessible_desc = ""
 )
@@ -68,7 +68,7 @@ create_grouped_bar(
 
 \item{tooltip}{character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.}
 
-\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::naccho_minimal_theme and naccho_normal.}
+\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.}
 
 \item{allow_export}{boolean, TRUE or FALSE, where true allows the visualization to be exported.}
 
@@ -93,7 +93,7 @@ test_data <- test_data \%>\%
 create_grouped_bar(
   data = test_data,
   type = "bar",
-  my_colors = c(naccho.viz::naccho_green, naccho.viz::naccho_teal),
+  my_colors = c(naccho.viz::green, naccho.viz::teal),
   x_variable = "year",
   y_variable = "value",
   x_group = "bender",

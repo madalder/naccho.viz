@@ -1,5 +1,6 @@
-## code to prepare `naccho_line_theme` dataset goes here
-naccho_line_theme <-
+## code to prepare `basic` dataset goes here
+
+basic <-
   highcharter::hc_theme(
     colors = naccho.viz::naccho_colors,
     chart = list(
@@ -8,7 +9,7 @@ naccho_line_theme <-
       fontFamily = "Heebo"),
     title = list(
       style = list(
-        color = naccho.viz::naccho_blue,
+        color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
         fontSize = "20px")
@@ -27,17 +28,14 @@ naccho_line_theme <-
         fontSize = "13px")
     ),
     xAxis = list(
-      lineWidth = 0,
-      lineColor = "#666",
-      tickWidth = 1,
-      tickLength = 5,
-      tickColor = "#666",
-      tickmarkPlacement = "on",
+      lineColor = naccho.viz::naccho_grey,
+      gridLineWidth = 0,
+      lineWidth = 1,
       labels = list(
         style = list(
           fontFamily = "Heebo",
           fontSize = "17px",
-          fontWeight = "600",
+          fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::naccho_grey)
       ),
@@ -50,14 +48,14 @@ naccho_line_theme <-
       )
     ),
     yAxis = list(
-      gridLineWidth = 0,
-      gridLineColor = "#666", # color of the grid lines
+      gridLineWidth = .8,
+      gridLineColor = "#E0E0E0", # color of the grid lines
+      lineWidth = 0, # horizontal line parallel on y-axis
       minorTicks = FALSE, # allows minor ticks if set to true
-      lineWidth = 0,
-      tickWidth = 1,
-      tickLength = 5,
-      tickColor = "#666",
-      tickmarkPlacement = "on",
+      tickWidth = .8,
+      tickLength = 2,
+      tickColor = "#E0E0E0",
+      tickmarkPlacement = "between",
       labels = list(
         style = list(
           fontFamily = "Heebo",
@@ -102,10 +100,15 @@ naccho_line_theme <-
         lineHeight = "20px")
     ),
     itemHoverStyle = list(
-      color = naccho.viz::naccho_green
+      color = naccho.viz::green
+    ),
+    plotOptions = list(
+      series = list(
+        pointPadding = 0,
+        groupPadding = 0.2,
+        borderWidth = 0
+      )
     )
   )
 
-use_data(naccho_line_theme, overwrite = TRUE, internal = TRUE)
-
-save(naccho_line_theme, file = "data/naccho_line_theme.rda")
+usethis::use_data(basic, overwrite = TRUE)
