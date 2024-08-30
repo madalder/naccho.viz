@@ -8,7 +8,7 @@ create_single_line(
   data,
   x_variable,
   y_variable,
-  my_colors = naccho.viz::naccho_colors,
+  my_colors = naccho.viz::colors,
   x_label,
   y_label,
   y_max = NULL,
@@ -29,7 +29,7 @@ create_single_line(
 
 \item{y_variable}{numeric; from the data frame.}
 
-\item{my_colors}{vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.}
+\item{my_colors}{vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.}
 
 \item{x_label}{character string; label for the x-axis.}
 
@@ -47,7 +47,7 @@ create_single_line(
 
 \item{tooltip}{character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.}
 
-\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::line and naccho_normal.}
+\item{select_theme}{hc_theme, must be a defined hc_theme.}
 
 \item{allow_export}{boolean, TRUE or FALSE, where true allows the visualization to be exported.}
 

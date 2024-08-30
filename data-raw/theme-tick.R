@@ -2,7 +2,7 @@
 
 tick <-
   highcharter::hc_theme(
-    colors = naccho.viz::naccho_colors,
+    colors = naccho.viz::colors,
     chart = list(
       backgroundColor = NULL),
     style = list(
@@ -23,19 +23,19 @@ tick <-
     ),
     caption = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontSize = "13px")
     ),
     xAxis = list(
-      lineColor = naccho.viz::naccho_grey,
+      lineColor = naccho.viz::grey,
       labels = list(
         style = list(
           fontFamily = "Heebo",
           fontSize = "22px",
           fontWeight = "bold",
           textOverflow = 'none',
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         style = list(
@@ -53,7 +53,7 @@ tick <-
       minorTicks = FALSE, # allows minor ticks if set to true
       tickWidth = 0,
       tickLength = 0,
-      tickColor = naccho.viz::naccho_grey,
+      tickColor = naccho.viz::grey,
       tickmarkPlacement = "between",
       labels = list(
         enabled = FALSE

@@ -2,7 +2,7 @@
 
 minimal <-
   highcharter::hc_theme(
-    colors = naccho.viz::naccho_colors,
+    colors = naccho.viz::colors,
     chart = list(
       backgroundColor = NULL),
     style = list(
@@ -16,19 +16,19 @@ minimal <-
     ),
     subtitle = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontWeight = "400",
         fontSize = "15px")
     ),
     caption = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontSize = "13px")
     ),
     xAxis = list(
-      lineColor = naccho.viz::naccho_grey,
+      lineColor = naccho.viz::grey,
       lineWidth = 0,
       labels = list(
         style = list(
@@ -36,11 +36,11 @@ minimal <-
           fontSize = "20px",
           fontWeight = "bold",
           textOverflow = 'none',
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "400",
           fontSize = "15px")
@@ -54,14 +54,14 @@ minimal <-
       lineWidth = 0,
       tickWidth = 1,
       tickLength = 8,
-      tickColor = naccho.viz::naccho_grey,
+      tickColor = naccho.viz::grey,
       tickmarkPlacement = "between",
       labels = list(
         style = list(
           fontFamily = "Heebo",
           fontSize = "15px",
           fontWeight = "normal",
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         align = "high",
@@ -69,7 +69,7 @@ minimal <-
         offset = 14,
         y = 25,
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "700",
           fontSize = "14px")
@@ -78,7 +78,7 @@ minimal <-
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontSize = "17px",
         fontWeight = "normal",
         color = "#666"),

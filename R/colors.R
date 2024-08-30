@@ -38,11 +38,11 @@
 #'
 #' A hex code for NACCHO grey
 #'
-#' @format ## `naccho_grey`
+#' @format ## `grey`
 #' A single vector as a hex code
 #'
 #' @source adapted from the NACCHO style guide for greater accessibility
-"naccho_grey"
+"grey"
 
 
 
@@ -74,11 +74,11 @@
 #'
 #' A hex code for NACCHO offwhite
 #'
-#' @format ## `naccho_offwhite`
+#' @format ## `light`
 #' A single vector as a hex code
 #'
 #' @source adapted from the NACCHO style guide for greater accessibility
-"naccho_offwhite"
+"light"
 
 
 
@@ -86,8 +86,8 @@
 #'
 #' A vector of 5 objects with NACCHO's main colors for visualizations
 #'
-#' @format ## `naccho_colors`
+#' @format ## `colors`
 #' A vector containing 5 objects
 #'
 #' @source adapted from the NACCHO style guide for greater accessibility
-"naccho_colors"
+"colors"

@@ -1,7 +1,7 @@
 ## code to prepare `line` dataset goes here
 line <-
   highcharter::hc_theme(
-    colors = naccho.viz::naccho_colors,
+    colors = naccho.viz::colors,
     chart = list(
       backgroundColor = NULL),
     style = list(
@@ -15,14 +15,14 @@ line <-
     ),
     subtitle = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontWeight = "400",
         fontSize = "15px")
     ),
     caption = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontSize = "13px")
     ),
@@ -39,11 +39,11 @@ line <-
           fontSize = "17px",
           fontWeight = "600",
           textOverflow = 'none',
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "400",
           fontSize = "15px")
@@ -63,7 +63,7 @@ line <-
           fontFamily = "Heebo",
           fontSize = "15px",
           fontWeight = "normal",
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         align = "high",
@@ -71,7 +71,7 @@ line <-
         offset = 14,
         y = 25,
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "700",
           fontSize = "14px")
@@ -80,7 +80,7 @@ line <-
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontSize = "17px",
         fontWeight = "normal",
         color = "#666"),

@@ -2,7 +2,7 @@
 
 butterfly <-
   highcharter::hc_theme(
-    colors = naccho.viz::naccho_colors,
+    colors = naccho.viz::colors,
     chart = list(
       backgroundColor = NULL),
     style = list(
@@ -16,19 +16,19 @@ butterfly <-
     ),
     subtitle = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontWeight = "400",
         fontSize = "15px")
     ),
     caption = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontSize = "13px")
     ),
     xAxis = list(
-      lineColor = naccho.viz::naccho_grey,
+      lineColor = naccho.viz::grey,
       gridLineWidth = 0,
       lineWidth = 0,
       labels = list(
@@ -37,11 +37,11 @@ butterfly <-
           fontSize = "14px",
           fontWeight = "bold",
           textOverflow = 'none',
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "400",
           fontSize = "15px")
@@ -59,7 +59,7 @@ butterfly <-
       gridLineWidth = 0,
       gridLineColor = "#E0E0E0", # color of the grid lines
       lineWidth = .5, # horizontal line parallel on y-axis
-      lineColor = naccho.viz::naccho_grey,
+      lineColor = naccho.viz::grey,
       minorTicks = FALSE, # allows minor ticks if set to true
       tickWidth = .8,
       tickLength = 2,
@@ -70,7 +70,7 @@ butterfly <-
           fontFamily = "Heebo",
           fontSize = "15px",
           fontWeight = "normal",
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         align = "low",
@@ -79,7 +79,7 @@ butterfly <-
         x = -10,
         y = 35,
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "700",
           fontSize = "14px")
@@ -88,7 +88,7 @@ butterfly <-
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontSize = "17px",
         fontWeight = "normal",
         color = "#666"),

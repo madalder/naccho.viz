@@ -15,7 +15,7 @@ globalVariables(".data")
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
 #' @param y_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
@@ -23,7 +23,7 @@ globalVariables(".data")
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. 
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -56,7 +56,7 @@ create_single_bar <- function(
     y_label,
     y_max = 100,
     y_format = "{value:,.0f}",
-    my_colors = naccho.viz::naccho_colors,
+    my_colors = naccho.viz::colors,
     title_text = "",
     subtitle_text = "",
     caption_text = "",
@@ -195,7 +195,7 @@ create_single_bar <- function(
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
 #' @param y_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
@@ -203,7 +203,7 @@ create_single_bar <- function(
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. 
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -250,7 +250,7 @@ create_stacked_bar <- function(
     y_label,
     y_max = 100,
     y_format = "{value:,.0f}",
-    my_colors = naccho.viz::naccho_colors,
+    my_colors = naccho.viz::colors,
     title_text = "",
     subtitle_text = "",
     caption_text = "",
@@ -394,7 +394,7 @@ create_stacked_bar <- function(
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
 #' @param y_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
@@ -403,7 +403,7 @@ create_stacked_bar <- function(
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param legend_reverse boolean, TRUE or FALSE, where TRUE reverses the legend.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. 
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -451,7 +451,7 @@ create_grouped_bar <- function(
     y_label,
     y_max = 100,
     y_format = "{value:,.0f}",
-    my_colors = naccho.viz::naccho_colors,
+    my_colors = naccho.viz::colors,
     title_text = "",
     subtitle_text = "",
     caption_text = "",
@@ -591,7 +591,7 @@ create_grouped_bar <- function(
 #' @param x_group character object; from the data frame.
 #' @param size numeric; controls width of figure, defaults to 400.
 #' @param y_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
@@ -637,7 +637,7 @@ create_tick_bar <- function(
     x_group,
     size = 400,
     y_format = "{value:,.0f}",
-    my_colors = c(naccho.viz::naccho_offwhite, naccho.viz::teal),
+    my_colors = c(naccho.viz::light, naccho.viz::teal),
     title_text = "",
     subtitle_text = "",
     caption_text = "",

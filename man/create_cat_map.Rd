@@ -9,7 +9,7 @@ create_cat_map(
   fips_column,
   selected_value,
   include_islands = FALSE,
-  my_colors = naccho.viz::naccho_colors,
+  my_colors = naccho.viz::colors,
   my_click = NA,
   title_text,
   subtitle_text,

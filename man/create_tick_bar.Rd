@@ -12,7 +12,7 @@ create_tick_bar(
   x_group,
   size = 400,
   y_format = "{value:,.0f}",
-  my_colors = c(naccho.viz::naccho_offwhite, naccho.viz::teal),
+  my_colors = c(naccho.viz::light, naccho.viz::teal),
   title_text = "",
   subtitle_text = "",
   caption_text = "",
@@ -40,7 +40,7 @@ create_tick_bar(
 
 \item{y_format}{character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}\%" add a \% sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}\%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".}
 
-\item{my_colors}{vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.}
+\item{my_colors}{vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.}
 
 \item{title_text}{character string; title of the visualization. Defaults to nothing.}
 

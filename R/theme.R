@@ -79,3 +79,15 @@
 #' @source adapted from the NACCHO basic theme
 "butterfly"
 
+
+
+
+#' NACCHO Scatter Plot Theme
+#'
+#' A list containing NACCHO's bar graph theme with a plotline at "0"
+#'
+#' @format ## `butterfly`
+#' A list with a length of 13
+#'
+#' @source NACCHO
+"scatter"

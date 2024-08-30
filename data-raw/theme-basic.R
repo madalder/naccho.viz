@@ -2,7 +2,7 @@
 
 basic <-
   highcharter::hc_theme(
-    colors = naccho.viz::naccho_colors,
+    colors = naccho.viz::colors,
     chart = list(
       backgroundColor = NULL),
     style = list(
@@ -16,19 +16,19 @@ basic <-
     ),
     subtitle = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontWeight = "400",
         fontSize = "15px")
     ),
     caption = list(
       style = list(
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontSize = "13px")
     ),
     xAxis = list(
-      lineColor = naccho.viz::naccho_grey,
+      lineColor = naccho.viz::grey,
       gridLineWidth = 0,
       lineWidth = 1,
       labels = list(
@@ -37,11 +37,11 @@ basic <-
           fontSize = "17px",
           fontWeight = "bold",
           textOverflow = 'none',
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "400",
           fontSize = "15px")
@@ -61,7 +61,7 @@ basic <-
           fontFamily = "Heebo",
           fontSize = "15px",
           fontWeight = "normal",
-          color = naccho.viz::naccho_grey)
+          color = naccho.viz::grey)
       ),
       title = list(
         align = "high",
@@ -69,7 +69,7 @@ basic <-
         offset = 14,
         y = 25,
         style = list(
-          color = naccho.viz::naccho_grey,
+          color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "700",
           fontSize = "14px")
@@ -78,7 +78,7 @@ basic <-
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
-        color = naccho.viz::naccho_grey,
+        color = naccho.viz::grey,
         fontSize = "17px",
         fontWeight = "normal",
         color = "#666"),

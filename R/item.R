@@ -6,7 +6,7 @@
 #' @param data the data frame to create the map.
 #' @param y_variable numeric; from the data frame.
 #' @param item_group character object; from the data frame.
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
@@ -14,7 +14,7 @@
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. 
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -48,7 +48,7 @@ create_single_item <- function(
     data,
     y_variable,
     item_group,
-    my_colors = naccho.viz::naccho_colors,
+    my_colors = naccho.viz::colors,
     title_text = "",
     subtitle_text = "",
     caption_text = "",
@@ -180,7 +180,7 @@ create_single_item <- function(
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. 
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #' @param color_one hex value or named color, first color.

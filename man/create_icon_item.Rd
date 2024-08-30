@@ -49,7 +49,7 @@ create_icon_item(
 
 \item{tooltip}{character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.}
 
-\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.}
+\item{select_theme}{hc_theme, must be a defined hc_theme.}
 
 \item{allow_export}{boolean, TRUE or FALSE, where true allows the visualization to be exported.}
 

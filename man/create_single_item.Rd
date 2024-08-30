@@ -8,7 +8,7 @@ create_single_item(
   data,
   y_variable,
   item_group,
-  my_colors = naccho.viz::naccho_colors,
+  my_colors = naccho.viz::colors,
   title_text = "",
   subtitle_text = "",
   caption_text = "",
@@ -28,7 +28,7 @@ create_single_item(
 
 \item{item_group}{character object; from the data frame.}
 
-\item{my_colors}{vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.}
+\item{my_colors}{vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.}
 
 \item{title_text}{character string; title of the visualization. Defaults to nothing.}
 
@@ -44,7 +44,7 @@ create_single_item(
 
 \item{tooltip}{character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.}
 
-\item{select_theme}{hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::minimal and naccho_normal.}
+\item{select_theme}{hc_theme, must be a defined hc_theme.}
 
 \item{allow_export}{boolean, TRUE or FALSE, where true allows the visualization to be exported.}
 

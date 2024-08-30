@@ -3,7 +3,7 @@
 #' @param data the data frame to create the map.
 #' @param variable object; from the data frame, ideally a character or factor.
 #' @param value numeric; from the data frame.
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.
 #' @param data_format character string; format for the y-axis numbers, defaults to "{value:,.0f}". This is used to adjust decimals or add characters after the number. Examples follow. "{value}%" add a % sign and does not specify decimals. "{value:.1f}" specifies one decimal point. "{value:,.0f}" specifies one decimal and adds a comma every three values. "{value}%" adds a percent sign. You can also add words to the value by doing the following: "{value} words here".
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
@@ -33,7 +33,7 @@
 create_pie <- function(data,
                        variable,
                        value,
-                       my_colors = naccho.viz::naccho_colors,
+                       my_colors = naccho.viz::colors,
                        data_format = "{value:.0f}%",
                        title_text = "",
                        subtitle_text = NULL,
@@ -74,7 +74,7 @@ create_pie <- function(data,
             distance = 5,
             padding = 2,
             style = list(
-              color = naccho.viz::naccho_grey,
+              color = naccho.viz::grey,
               fontFamily = "Heebo",
               fontWeight = "500",
               fontSize = label_size)

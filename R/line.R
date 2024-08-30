@@ -4,7 +4,7 @@
 #' @param data the data frame to create the map.
 #' @param x_variable object; from the data frame, ideally a character.
 #' @param y_variable numeric; from the data frame.
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.
 #' @param x_label character string; label for the x-axis.
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
@@ -13,7 +13,7 @@
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::line and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. 
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -47,7 +47,7 @@
 create_single_line <- function(data,
                                x_variable,
                                y_variable,
-                               my_colors = naccho.viz::naccho_colors,
+                               my_colors = naccho.viz::colors,
                                x_label,
                                y_label,
                                y_max = NULL,
@@ -171,7 +171,7 @@ create_single_line <- function(data,
 #' @param x_variable object; from the data frame, ideally a character.
 #' @param y_variable numeric; from the data frame.
 #' @param x_group character object; from the data frame.
-#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::naccho_colors.
+#' @param my_colors vector or character string; one character or a vector of characters, which must be defined hex values. Defaults to naccho.viz::colors.
 #' @param x_label character string; label for the x-axis.
 #' @param y_label character string; label for the y-axis.
 #' @param y_max numeric; the maximun value of the y-axis, defaults to 100.
@@ -182,7 +182,7 @@ create_single_line <- function(data,
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
-#' @param select_theme hc_theme, must be a defined hc_theme. Options from within this package include naccho.viz::line and naccho_normal.
+#' @param select_theme hc_theme, must be a defined hc_theme. 
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -222,7 +222,7 @@ create_grouped_line <- function(data,
                                x_variable,
                                y_variable,
                                x_group,
-                               my_colors = naccho.viz::naccho_colors,
+                               my_colors = naccho.viz::colors,
                                x_label,
                                y_label,
                                y_max = NULL,
