@@ -69,7 +69,7 @@ line <-
         align = "high",
         rotation = 0,
         offset = 14,
-        y = 25,
+        -20,
         style = list(
           color = naccho.viz::grey,
           fontFamily = "Heebo",

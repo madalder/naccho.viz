@@ -23,7 +23,7 @@ globalVariables(".data")
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. 
+#' @param select_theme hc_theme, must be a defined hc_theme.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -53,7 +53,7 @@ create_single_bar <- function(
     y_variable,
     tick_amount = 6,
     color_bars = FALSE,
-    y_label,
+    y_label = "",
     y_max = 100,
     y_format = "{value:,.0f}",
     my_colors = naccho.viz::colors,
@@ -63,7 +63,7 @@ create_single_bar <- function(
     caption_align = "center",
     legend_enable = FALSE,
     legend_title = "",
-    tooltip,
+    tooltip = NULL,
     select_theme = naccho.viz::minimal,
     allow_export = TRUE,
     accessible_desc = ""
@@ -203,7 +203,7 @@ create_single_bar <- function(
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. 
+#' @param select_theme hc_theme, must be a defined hc_theme.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -403,7 +403,7 @@ create_stacked_bar <- function(
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param legend_reverse boolean, TRUE or FALSE, where TRUE reverses the legend.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. 
+#' @param select_theme hc_theme, must be a defined hc_theme.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
