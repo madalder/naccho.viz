@@ -34,7 +34,7 @@ basic <-
       labels = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "17px",
+          fontSize = "14px",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
