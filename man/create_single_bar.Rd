@@ -11,7 +11,7 @@ create_single_bar(
   y_variable,
   tick_amount = 6,
   color_bars = FALSE,
-  y_label,
+  y_label = "",
   y_max = 100,
   y_format = "{value:,.0f}",
   my_colors = naccho.viz::colors,
@@ -21,7 +21,7 @@ create_single_bar(
   caption_align = "center",
   legend_enable = FALSE,
   legend_title = "",
-  tooltip,
+  tooltip = NULL,
   select_theme = naccho.viz::minimal,
   allow_export = TRUE,
   accessible_desc = ""

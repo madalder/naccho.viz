@@ -13,7 +13,7 @@ create_pie(
   title_text = "",
   subtitle_text = NULL,
   caption_text = NULL,
-  label_size = "15px",
+  label_size = "2.5vmin",
   legend_enable = FALSE,
   allow_export = TRUE,
   accessible_desc = ""
@@ -36,7 +36,7 @@ create_pie(
 
 \item{caption_text}{character string; source and data notes to appear underneath the figure. Defaults to nothing.}
 
-\item{label_size}{character such as "13px", defaults to 13px.}
+\item{label_size}{character such as "13px", defaults to 2.2vmin.}
 
 \item{legend_enable}{boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.}
 
