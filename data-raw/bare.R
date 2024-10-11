@@ -12,20 +12,20 @@ bare <-
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
-        fontSize = "20px")
+        fontSize = "3vmin")
     ),
     subtitle = list(
       style = list(
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "600",
-        fontSize = "15px")
+        fontSize = "2.5vmin")
     ),
     caption = list(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "13px")
+        fontSize = "2.2vmin")
     ),
     xAxis = list(
       lineColor = "#fff",
@@ -33,7 +33,7 @@ bare <-
       labels = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "14px",
+          fontSize = "2.3vmin",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -43,7 +43,7 @@ bare <-
           color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "400",
-          fontSize = "15px")
+          fontSize = "2.5vmin")
       )
     ),
     yAxis = list(
@@ -67,21 +67,21 @@ bare <-
           color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "500",
-          fontSize = "15px")
+          fontSize = "2.5vmin")
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
         color = naccho.viz::navy,
-        fontSize = "17px",
+        fontSize = "2.7vmin",
         fontWeight = "normal",
         color = "#666"),
       title = list(
         style = list(
           textDecoration = "none",
           fontFamily = "Heebo",
-          fontSize = "16px")
+          fontSize = "2.6vmin")
       )
     ),
     tooltip = list(
@@ -90,8 +90,8 @@ bare <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "16px",
-        lineHeight = "18px")
+        fontSize = "2.6vmin",
+        lineHeight = "2.8vmin")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green
