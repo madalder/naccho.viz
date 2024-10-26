@@ -13,7 +13,6 @@ BugReports: https://github.com/lindsayjorgenson/naccho.viz/issues
 Imports: 
     highcharter,
     magrittr,
-    custom.map,
     htmlwidgets
 Suggests: 
     dplyr,
@@ -22,6 +21,8 @@ Suggests:
     knitr,
     stringr,
     rlang
+Remotes:
+    lindsayjorgenson/custom.map
 Depends: 
     R (>= 2.10)
 LazyData: true
