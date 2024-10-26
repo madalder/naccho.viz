@@ -1,6 +1,6 @@
 globalVariables(c("map_data", "data_classes", "map_data", "map_value", "value", "from", "map_type"))
 
-#' Create an accessible categorical map using the NACCHO theme in {highcharter}
+#' Create an accessible categorical map using the NACCHO theme in \{highcharter\}
 #'
 #' @param data the data frame to create the map.
 #' @param fips_column column of a dataframe with the Federal Information Processing System (FIPS) Codes for States and Counties, in quotes.

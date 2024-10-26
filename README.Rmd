@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-Create NACCHO-themed data visualizations using the {highcharter} package. For information on the highcharts license, visit [their website.](https://shop.highcharts.com/?gad_source=1&gclid=CjwKCAjwmYCzBhA6EiwAxFwfgGobLdIzZ30MDAVCQyV65AQT8dhWcVyxd6IkG4ikps4zGrXAQvFkLhoCtzsQAvD_BwE)
+Create NACCHO-themed data visualizations using the \{highcharter\}package. For information on the highcharts license, visit [their website.](https://shop.highcharts.com/?gad_source=1&gclid=CjwKCAjwmYCzBhA6EiwAxFwfgGobLdIzZ30MDAVCQyV65AQT8dhWcVyxd6IkG4ikps4zGrXAQvFkLhoCtzsQAvD_BwE)
 
 ## Installation
 

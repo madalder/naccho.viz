@@ -1,7 +1,7 @@
 #' NACCHO Single Item Chart
 #'
 #' @description
-#' Create an accessible stacked bar chart (vertical or horizontal) using a NACCHO theme and the {highcharter} package.
+#' Create an accessible stacked bar chart (vertical or horizontal) using a NACCHO theme and the \{highcharter\} package.
 #'
 #' @param data the data frame to create the map.
 #' @param y_variable numeric; from the data frame.
@@ -14,7 +14,7 @@
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. 
+#' @param select_theme hc_theme, must be a defined hc_theme.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -180,7 +180,7 @@ create_single_item <- function(
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. 
+#' @param select_theme hc_theme, must be a defined hc_theme.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #' @param color_one hex value or named color, first color.

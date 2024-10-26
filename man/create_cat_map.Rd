@@ -2,7 +2,7 @@
 % Please edit documentation in R/map.R
 \name{create_cat_map}
 \alias{create_cat_map}
-\title{Create an accessible categorical map using the NACCHO theme in {highcharter}}
+\title{Create an accessible categorical map using the NACCHO theme in \{highcharter\}}
 \usage{
 create_cat_map(
   data,
@@ -54,5 +54,5 @@ create_cat_map(
 A categorical map
 }
 \description{
-Create an accessible categorical map using the NACCHO theme in {highcharter}
+Create an accessible categorical map using the NACCHO theme in \{highcharter\}
 }

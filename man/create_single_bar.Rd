@@ -72,7 +72,7 @@ create_single_bar(
 A column or bar chart from highcharter.
 }
 \description{
-Create an accessible single bar chart (vertical or horizontal) using a NACCHO theme and the {highcharter} package.
+Create an accessible single bar chart (vertical or horizontal) using a NACCHO theme and the \{highcharter\} package.
 }
 \examples{
 test_data <- data.frame(

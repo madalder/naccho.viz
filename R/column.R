@@ -4,7 +4,7 @@ globalVariables(".data")
 #' NACCHO Single Bar Chart
 #'
 #' @description
-#' Create an accessible single bar chart (vertical or horizontal) using a NACCHO theme and the {highcharter} package.
+#' Create an accessible single bar chart (vertical or horizontal) using a NACCHO theme and the \{highcharter\} package.
 #'
 #' @param data the data frame to create the map.
 #' @param type character string; must be "column" or "bar", where "column" displays vertically and "bar" displays horizontally.
@@ -183,7 +183,7 @@ create_single_bar <- function(
 #' NACCHO Stacked Bar Chart
 #'
 #' @description
-#' Create an accessible stacked bar chart (vertical or horizontal) using a NACCHO theme and the {highcharter} package.
+#' Create an accessible stacked bar chart (vertical or horizontal) using a NACCHO theme and the \{highcharter\} package.
 #'
 #' @param data the data frame to create the map.
 #' @param type character string; must be "column" or "bar", where "column" displays vertically and "bar" displays horizontally.
@@ -382,7 +382,7 @@ create_stacked_bar <- function(
 #' NACCHO Grouped Bar Chart
 #'
 #' @description
-#' Create an accessible grouped bar chart (vertical or horizontal) using a NACCHO theme and the {highcharter} package.
+#' Create an accessible grouped bar chart (vertical or horizontal) using a NACCHO theme and the \{highcharter\} package.
 #'
 #' @param data the data frame to create the map.
 #' @param type character string; must be "column" or "bar", where "column" displays vertically and "bar" displays horizontally.
@@ -582,7 +582,7 @@ create_grouped_bar <- function(
 #' NACCHO Tick Bar Chart
 #'
 #' @description
-#' Create an accessible ticked bar chart (horizontal) using a NACCHO theme and the {highcharter} package.
+#' Create an accessible ticked bar chart (horizontal) using a NACCHO theme and the \{highcharter\} package.
 #'
 #' @param data the data frame to create the map.
 #' @param type character string; must be "column" or "bar", where "column" displays vertically and "bar" displays horizontally.

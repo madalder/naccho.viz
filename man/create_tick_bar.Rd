@@ -66,7 +66,7 @@ create_tick_bar(
 A ticked chart from highcharter.
 }
 \description{
-Create an accessible ticked bar chart (horizontal) using a NACCHO theme and the {highcharter} package.
+Create an accessible ticked bar chart (horizontal) using a NACCHO theme and the \{highcharter\} package.
 }
 \examples{
 test_data <- base::data.frame(

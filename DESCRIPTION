@@ -13,7 +13,7 @@ BugReports: https://github.com/lindsayjorgenson/naccho.viz/issues
 Imports: 
     highcharter,
     magrittr,
-    rsvg,
+    custom.map,
     htmlwidgets
 Suggests: 
     dplyr,

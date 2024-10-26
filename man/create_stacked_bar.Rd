@@ -75,7 +75,7 @@ create_stacked_bar(
 A column or bar chart from highcharter.
 }
 \description{
-Create an accessible stacked bar chart (vertical or horizontal) using a NACCHO theme and the {highcharter} package.
+Create an accessible stacked bar chart (vertical or horizontal) using a NACCHO theme and the \{highcharter\} package.
 }
 \examples{
 test_data <- base::data.frame(
