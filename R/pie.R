@@ -8,7 +8,7 @@
 #' @param title_text character string; title of the visualization. Defaults to nothing.
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
-#' @param label_size character such as "13px", defaults to 13px.
+#' @param label_size character such as "13px", defaults to 2.2vmin.
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
@@ -38,7 +38,7 @@ create_pie <- function(data,
                        title_text = "",
                        subtitle_text = NULL,
                        caption_text = NULL,
-                       label_size = "15px",
+                       label_size = "2.5vmin",
                        legend_enable = FALSE,
                        allow_export = TRUE,
                        accessible_desc = "") {
