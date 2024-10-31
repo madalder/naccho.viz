@@ -13,7 +13,7 @@ create_pie(
   title_text = "",
   subtitle_text = NULL,
   caption_text = NULL,
-  label_size = "2.5vmin",
+  label_size = "2vmin",
   legend_enable = FALSE,
   allow_export = TRUE,
   accessible_desc = ""

@@ -25,14 +25,14 @@ tick <-
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "2.2vmin")
+        fontSize = "2vmin")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
       labels = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "3.2vmin",
+          fontSize = "2vmin",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -42,7 +42,7 @@ tick <-
           color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "400",
-          fontSize = "2.5vmin")
+          fontSize = "2.2vmin")
       )
     ),
     yAxis = list(
@@ -67,21 +67,21 @@ tick <-
           color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "500",
-          fontSize = "2.5vmin")
+          fontSize = "2.2vmin")
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
         color = naccho.viz::navy,
-        fontSize = "2.7vmin",
+        fontSize = "2vmin",
         fontWeight = "normal",
         color = "#666"),
       title = list(
         style = list(
           textDecoration = "none",
           fontFamily = "Heebo",
-          fontSize = "2.6vmin")
+          fontSize = "2vmin")
       )
     ),
     tooltip = list(
@@ -90,8 +90,8 @@ tick <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "2.6vmin",
-        lineHeight = "3vmin")
+        fontSize = "2vmin",
+        lineHeight = "1.5vmin")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green
