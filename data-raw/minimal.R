@@ -25,13 +25,14 @@ minimal <-
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "2vmin")
+        fontSize = "1.8vmin")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
       lineWidth = 0,
       labels = list(
         style = list(
+          padding = ".5vmin",
           fontFamily = "Heebo",
           fontSize = "2vmin",
           fontWeight = "bold",
@@ -58,6 +59,7 @@ minimal <-
       tickmarkPlacement = "between",
       labels = list(
         style = list(
+          padding = ".5vmin",
           fontFamily = "Heebo",
           fontSize = "2vmin",
           fontWeight = "normal",
@@ -97,7 +99,7 @@ minimal <-
         fontFamily = "Heebo",
         fontSize = "2vmin",
         fontWeight = "400",
-        lineHeight = "1.5vmin")
+        lineHeight = "1.8vmin")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green

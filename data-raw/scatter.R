@@ -26,7 +26,7 @@ scatter <- highcharter::hc_theme(
     style = list(
       color = naccho.viz::grey,
       fontFamily = "Heebo",
-      fontSize = "2.2vmin"
+      fontSize = "1.8vmin"
     )
   ),
   xAxis = list(
@@ -135,7 +135,7 @@ scatter <- highcharter::hc_theme(
       fontFamily = "Heebo",
       fontSize = "2vmin",
       fontWeight = "600",
-      lineHeight = "1.5vmin"
+      lineHeight = "1.8vmin"
     )
   ),
   plotOptions = list(
@@ -151,7 +151,7 @@ scatter <- highcharter::hc_theme(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "2vmin"
+        fontSize = "1.8vmin"
       )
     )
   )

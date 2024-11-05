@@ -25,7 +25,7 @@ butterfly <-
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "2.2vmin")
+        fontSize = "1.8vmin")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
@@ -33,8 +33,9 @@ butterfly <-
       lineWidth = 0,
       labels = list(
         style = list(
+          padding = ".5vmin",
           fontFamily = "Heebo",
-          fontSize = "2.3vmin",
+          fontSize = "2vmin",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -44,7 +45,7 @@ butterfly <-
           color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "400",
-          fontSize = "2.5vmin")
+          fontSize = "2.3vmin")
       )
     ),
     yAxis = list(
@@ -67,8 +68,9 @@ butterfly <-
       tickmarkPlacement = "between",
       labels = list(
         style = list(
+          padding = ".5vmin",
           fontFamily = "Heebo",
-          fontSize = "2.5vmin",
+          fontSize = "2vmin",
           fontWeight = "normal",
           color = naccho.viz::grey)
       ),
@@ -106,9 +108,9 @@ butterfly <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "2.6vmin",
+        fontSize = "2vmin",
         fontWeight = "600",
-        lineHeight = "3vmin")
+        lineHeight = "2vmin")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green

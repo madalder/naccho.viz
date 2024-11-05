@@ -25,7 +25,7 @@ histogram <-
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "2vmin")
+        fontSize = "1.8vmin")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
@@ -36,8 +36,10 @@ histogram <-
       lineWidth = 1,
       labels = list(
         style = list(
+          padding = ".5vmin",
           fontFamily = "Heebo",
           fontSize = "2vmin",
+          padding = ".5vmin",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -61,8 +63,10 @@ histogram <-
       tickmarkPlacement = "between",
       labels = list(
         style = list(
+          padding = ".5vmin",
           fontFamily = "Heebo",
           fontSize = "2vmin",
+          padding = ".5vmin",
           fontWeight = "normal",
           color = naccho.viz::grey)
       ),
@@ -100,7 +104,7 @@ histogram <-
         fontFamily = "Heebo",
         fontSize = "2vmin",
         fontWeight = "600",
-        lineHeight = "1.5vmin")
+        lineHeight = "1.8vmin")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green

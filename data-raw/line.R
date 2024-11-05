@@ -24,7 +24,7 @@ line <-
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "2vmin")
+        fontSize = "1.8vmin")
     ),
     xAxis = list(
       lineWidth = 0,
@@ -35,6 +35,7 @@ line <-
       tickmarkPlacement = "on",
       labels = list(
         style = list(
+          padding = ".5vmin",
           fontFamily = "Heebo",
           fontSize = "2vmin",
           fontWeight = "600",
@@ -60,6 +61,7 @@ line <-
       tickmarkPlacement = "on",
       labels = list(
         style = list(
+          padding = ".5vmin",
           fontFamily = "Heebo",
           fontSize = "2vmin",
           fontWeight = "normal",
@@ -99,7 +101,7 @@ line <-
         fontFamily = "Heebo",
         fontSize = "2vmin",
         fontWeight = "600",
-        lineHeight = "1.5vmin")
+        lineHeight = "1,8vmin")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green
