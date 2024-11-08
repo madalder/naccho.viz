@@ -37,7 +37,7 @@
 #'
 #' A list containing NACCHO's line highcharter theme for line graphs
 #'
-#' @format ## `bare`
+#' @format ## `line`
 #' A list with a length of 12
 #'
 #' @source adapted from the NACCHO style guide for line graphs

@@ -99,9 +99,9 @@ line <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "2vmin",
+        fontSize = "1.8vmin",
         fontWeight = "600",
-        lineHeight = "1,8vmin")
+        lineHeight = "1.8vmin")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green

@@ -5,7 +5,7 @@
 \alias{line}
 \title{NACCHO Line Theme}
 \format{
-\subsection{\code{bare}}{
+\subsection{\code{line}}{
 
 A list with a length of 12
 }
