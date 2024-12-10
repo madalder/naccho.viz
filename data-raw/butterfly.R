@@ -12,20 +12,20 @@ butterfly <-
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
-        fontSize = "3vmin")
+        fontSize = "2em")
     ),
     subtitle = list(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontWeight = "400",
-        fontSize = "2.5vmin")
+        fontSize = "1.8em")
     ),
     caption = list(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "1.8vmin")
+        fontSize = "1.2em")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
@@ -33,9 +33,9 @@ butterfly <-
       lineWidth = 0,
       labels = list(
         style = list(
-          padding = ".5vmin",
+          padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "2vmin",
+          fontSize = "1.4em",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -45,18 +45,10 @@ butterfly <-
           color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "400",
-          fontSize = "2.3vmin")
+          fontSize = "1.6em")
       )
     ),
     yAxis = list(
-      # plotLines = list(
-      #   list(
-      #     value = 0,
-      #     color = "#fff",
-      #     width = 2,
-      #     zIndex = 5
-      #   )
-      # ),
       gridLineWidth = 0,
       gridLineColor = "#E0E0E0", # color of the grid lines
       lineWidth = .5, # horizontal line parallel on y-axis
@@ -68,9 +60,9 @@ butterfly <-
       tickmarkPlacement = "between",
       labels = list(
         style = list(
-          padding = ".5vmin",
+          padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "2vmin",
+          fontSize = "1.4em",
           fontWeight = "normal",
           color = naccho.viz::grey)
       ),
@@ -84,21 +76,21 @@ butterfly <-
           color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "700",
-          fontSize = "2.3vmin")
+          fontSize = "1.6em")
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
         color = naccho.viz::grey,
-        fontSize = "2.7vmin",
+        fontSize = "1.8em",
         fontWeight = "normal",
         color = "#666"),
       title = list(
         style = list(
           textDecoration = "none",
           fontFamily = "Heebo",
-          fontSize = "2.6vmin")
+          fontSize = "1.7em")
       )
     ),
     tooltip = list(
@@ -108,9 +100,9 @@ butterfly <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "2vmin",
+        fontSize = "1.4em",
         fontWeight = "600",
-        lineHeight = "2vmin")
+        lineHeight = "1.4em")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green

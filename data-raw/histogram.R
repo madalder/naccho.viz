@@ -12,34 +12,30 @@ histogram <-
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
-        fontSize = "3vmin")
+        fontSize = "2em")
     ),
     subtitle = list(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontWeight = "400",
-        fontSize = "2.5vmin")
+        fontSize = "1.8em")
     ),
     caption = list(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "1.8vmin")
+        fontSize = "1.2em")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
       gridLineWidth = 0,
-      # tickColor = "#666",
-      # tickWidth = .8,
-      # tickLength = 8,
       lineWidth = 1,
       labels = list(
         style = list(
-          padding = ".5vmin",
+          padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "2vmin",
-          padding = ".5vmin",
+          fontSize = "1.4em",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -49,7 +45,7 @@ histogram <-
           color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "400",
-          fontSize = "2.2vmin")
+          fontSize = "1.5em")
       )
     ),
     yAxis = list(
@@ -63,10 +59,9 @@ histogram <-
       tickmarkPlacement = "between",
       labels = list(
         style = list(
-          padding = ".5vmin",
+          padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "2vmin",
-          padding = ".5vmin",
+          fontSize = "1.4em",
           fontWeight = "normal",
           color = naccho.viz::grey)
       ),
@@ -79,21 +74,21 @@ histogram <-
           color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "700",
-          fontSize = "2.2vmin")
+          fontSize = "1.5em")
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
         color = naccho.viz::grey,
-        fontSize = "2vmin",
+        fontSize = "1.4em",
         fontWeight = "normal",
         color = "#666"),
       title = list(
         style = list(
           textDecoration = "none",
           fontFamily = "Heebo",
-          fontSize = "2.2vmin")
+          fontSize = "1.5em")
       )
     ),
     tooltip = list(
@@ -102,9 +97,9 @@ histogram <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "2vmin",
+        fontSize = "1.4em",
         fontWeight = "600",
-        lineHeight = "1.8vmin")
+        lineHeight = "1.2em")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green

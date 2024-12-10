@@ -12,28 +12,28 @@ tick <-
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
-        fontSize = "3vmin")
+        fontSize = "2em")
     ),
     subtitle = list(
       style = list(
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "600",
-        fontSize = "2.5vmin")
+        fontSize = "1.8em")
     ),
     caption = list(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "1.8vmin")
+        fontSize = "1.2em")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
       labels = list(
         style = list(
-          padding = ".5vmin",
+          padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "2vmin",
+          fontSize = "1.4em",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -43,7 +43,7 @@ tick <-
           color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "400",
-          fontSize = "2.2vmin")
+          fontSize = "1.5em")
       )
     ),
     yAxis = list(
@@ -68,21 +68,21 @@ tick <-
           color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "500",
-          fontSize = "2.2vmin")
+          fontSize = "1.5em")
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
         color = naccho.viz::navy,
-        fontSize = "2vmin",
+        fontSize = "1.4em",
         fontWeight = "normal",
         color = "#666"),
       title = list(
         style = list(
           textDecoration = "none",
           fontFamily = "Heebo",
-          fontSize = "2vmin")
+          fontSize = "1.4em")
       )
     ),
     tooltip = list(
@@ -91,8 +91,8 @@ tick <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "2vmin",
-        lineHeight = "1.8vmin")
+        fontSize = "1.4em",
+        lineHeight = "1.2em")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green
