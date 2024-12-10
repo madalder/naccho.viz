@@ -35,7 +35,7 @@ library(highcharter)
         filename = "custom-file-name"
         ) |>
       add_logo(
-        "https://github.com/lindsayjorgenson.png",
+        "https://www.naccho.org/images/naccho-logo-banner.svg",
         width = 10L,
         height = 10L
       )

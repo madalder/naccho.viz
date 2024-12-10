@@ -17,7 +17,7 @@ You can install the development version of naccho.viz from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("lindsayjorgenson/naccho.viz")
+devtools::install_github("madalder/naccho.viz")
 ```
 
 ## Example

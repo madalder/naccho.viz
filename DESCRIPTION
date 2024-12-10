@@ -8,8 +8,8 @@ License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-URL: https://github.com/lindsayjorgenson/naccho.viz
-BugReports: https://github.com/lindsayjorgenson/naccho.viz/issues
+URL: https://github.com/madalder/naccho.viz
+BugReports: https://github.com/madalder/naccho.viz/issues
 Imports: 
     custom.map,
     highcharter,
@@ -23,7 +23,7 @@ Suggests:
     stringr,
     rlang
 Remotes:
-    lindsayjorgenson/custom.map
+    madalder/custom.map
 Depends: 
     R (>= 3.5)
 LazyData: true
