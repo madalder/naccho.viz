@@ -279,7 +279,7 @@ create_grouped_line <- function(data,
       title = list(text = y_label), # y-axis label
       maxPadding = .09,
       endOnTick = FALSE,
-      max = filter_meta()$y_max,
+      max = y_max,
       min = 0,
       labels = list(
         format = y_format
