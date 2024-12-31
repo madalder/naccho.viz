@@ -12,20 +12,20 @@ tick <-
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
-        fontSize = "2em")
+        fontSize = "3vmin")
     ),
     subtitle = list(
       style = list(
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "600",
-        fontSize = "1.8em")
+        fontSize = "2.5vmin")
     ),
     caption = list(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "1.2em")
+        fontSize = "1.8vmin")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
@@ -33,7 +33,7 @@ tick <-
         style = list(
           padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "1.4em",
+          fontSize = "2vmin",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -43,7 +43,7 @@ tick <-
           color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "400",
-          fontSize = "1.5em")
+          fontSize = "2vmin")
       )
     ),
     yAxis = list(
@@ -68,21 +68,21 @@ tick <-
           color = naccho.viz::navy,
           fontFamily = "Heebo",
           fontWeight = "500",
-          fontSize = "1.5em")
+          fontSize = "2vmin")
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
         color = naccho.viz::navy,
-        fontSize = "1.4em",
+        fontSize = "2vmin",
         fontWeight = "normal",
         color = "#666"),
       title = list(
         style = list(
           textDecoration = "none",
           fontFamily = "Heebo",
-          fontSize = "1.4em")
+          fontSize = "2vmin")
       )
     ),
     tooltip = list(
@@ -91,8 +91,8 @@ tick <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "1.4em",
-        lineHeight = "1.2em")
+        fontSize = "1em",
+        lineHeight = "1.1em")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green

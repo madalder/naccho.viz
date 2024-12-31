@@ -12,7 +12,7 @@ butterfly <-
         color = naccho.viz::navy,
         fontFamily = "Heebo",
         fontWeight = "bold",
-        fontSize = "2em")
+        fontSize = "3vmin")
     ),
     subtitle = list(
       style = list(
@@ -25,7 +25,7 @@ butterfly <-
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "1.2em")
+        fontSize = "1.8vmin")
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
@@ -35,7 +35,7 @@ butterfly <-
         style = list(
           padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "1.4em",
+          fontSize = "2vmin",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
@@ -45,7 +45,7 @@ butterfly <-
           color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "400",
-          fontSize = "1.6em")
+          fontSize = "2vmin")
       )
     ),
     yAxis = list(
@@ -62,7 +62,7 @@ butterfly <-
         style = list(
           padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "1.4em",
+          fontSize = "2vmin",
           fontWeight = "normal",
           color = naccho.viz::grey)
       ),
@@ -76,21 +76,21 @@ butterfly <-
           color = naccho.viz::grey,
           fontFamily = "Heebo",
           fontWeight = "700",
-          fontSize = "1.6em")
+          fontSize = "2vmin")
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
         color = naccho.viz::grey,
-        fontSize = "1.8em",
+        fontSize = "2vmin",
         fontWeight = "normal",
         color = "#666"),
       title = list(
         style = list(
           textDecoration = "none",
           fontFamily = "Heebo",
-          fontSize = "1.7em")
+          fontSize = "2vmin")
       )
     ),
     tooltip = list(
@@ -100,9 +100,9 @@ butterfly <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "1.4em",
+        fontSize = "1em",
         fontWeight = "600",
-        lineHeight = "1.4em")
+        lineHeight = "1.1em")
     ),
     itemHoverStyle = list(
       color = naccho.viz::green

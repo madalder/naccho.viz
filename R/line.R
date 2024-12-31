@@ -13,7 +13,7 @@
 #' @param subtitle_text character string; subtitle to appear underneath the title. Defaults to nothing.
 #' @param caption_text character string; source and data notes to appear underneath the figure. Defaults to nothing.
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
-#' @param select_theme hc_theme, must be a defined hc_theme. 
+#' @param select_theme hc_theme, must be a defined hc_theme.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -182,7 +182,7 @@ create_single_line <- function(data,
 #' @param tooltip character string; text and values to appear in the tooltip, use {point.xx} to call a value from the data frame, where xx is a specific column.
 #' @param legend_enable boolean, TRUE or FALSE, where TRUE enables the legend. Defaults to FALSE.
 #' @param legend_title character string; title of the legend, defaults to nothing unless defined.
-#' @param select_theme hc_theme, must be a defined hc_theme. 
+#' @param select_theme hc_theme, must be a defined hc_theme.
 #' @param allow_export boolean, TRUE or FALSE, where true allows the visualization to be exported.
 #' @param accessible_desc character string; alternative text description of the figure for screen readers.
 #'
@@ -277,7 +277,9 @@ create_grouped_line <- function(data,
     ) %>%
     highcharter::hc_yAxis(
       title = list(text = y_label), # y-axis label
-      max = y_max,
+      maxPadding = .09,
+      endOnTick = FALSE,
+      max = filter_meta()$y_max,
       min = 0,
       labels = list(
         format = y_format

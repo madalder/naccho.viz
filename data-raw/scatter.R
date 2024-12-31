@@ -10,7 +10,7 @@ scatter <- highcharter::hc_theme(
       color = naccho.viz::navy,
       fontFamily = "Heebo",
       fontWeight = "700",
-      fontSize = "2em"
+      fontSize = "3vmin"
     )
   ),
   subtitle = list(
@@ -18,14 +18,14 @@ scatter <- highcharter::hc_theme(
       color = naccho.viz::grey,
       fontFamily = "Heebo",
       fontWeight = "400",
-      fontSize = "1.8em"
+      fontSize = "2.5vmin"
     )
   ),
   caption = list(
     style = list(
       color = naccho.viz::grey,
       fontFamily = "Heebo",
-      fontSize = "1.2em"
+      fontSize = "1.8vmin"
     )
   ),
   xAxis = list(
@@ -39,7 +39,7 @@ scatter <- highcharter::hc_theme(
     labels = list(
       style = list(
         fontFamily = "Heebo",
-        fontSize = "1.4em",
+        fontSize = "2vmin",
         fontWeight = "300",
         textOverflow = "none",
         color = naccho.viz::grey
@@ -51,7 +51,7 @@ scatter <- highcharter::hc_theme(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontWeight = "600",
-        fontSize = "1.5em"
+        fontSize = "2vmin"
       )
     ),
     plotLines = list(
@@ -61,9 +61,9 @@ scatter <- highcharter::hc_theme(
       label = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "1.4em",
+          fontSize = "2vmin",
           fontWeight = "300",
-          textOverflow = "none",
+          # textOverflow = "none",
           color = naccho.viz::grey
         )
       )
@@ -81,7 +81,7 @@ scatter <- highcharter::hc_theme(
     labels = list(
       style = list(
         fontFamily = "Heebo",
-        fontSize = "1.4em",
+        fontSize = "2vmin",
         fontWeight = "300",
         textOverflow = "none",
         color = naccho.viz::grey
@@ -93,7 +93,7 @@ scatter <- highcharter::hc_theme(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
         fontWeight = "600",
-        fontSize = "1.5em"
+        fontSize = "2vmin"
       )
     ),
     plotLines = list(
@@ -103,7 +103,7 @@ scatter <- highcharter::hc_theme(
       label = list(
         style = list(
           fontFamily = "Heebo",
-          fontSize = "1.4em",
+          fontSize = "2vmin",
           fontWeight = "300",
           textOverflow = "none",
           color = naccho.viz::grey
@@ -115,14 +115,14 @@ scatter <- highcharter::hc_theme(
     itemStyle = list(
       fontFamily = "Heebo",
       color = naccho.viz::grey,
-      fontSize = "1.4em",
+      fontSize = "2vmin",
       fontWeight = "normal"
     ),
     title = list(
       style = list(
         textDecoration = "none",
         fontFamily = "Heebo",
-        fontSize = "1.5em"
+        fontSize = "2vmin"
       )
     )
   ),
@@ -132,9 +132,9 @@ scatter <- highcharter::hc_theme(
     backgroundColor = "#fff",
     style = list(
       fontFamily = "Heebo",
-      fontSize = "1.4em",
+      fontSize = "1em",
       fontWeight = "600",
-      lineHeight = "1.2em"
+      lineHeight = "1.1em"
     )
   ),
   plotOptions = list(
@@ -150,7 +150,7 @@ scatter <- highcharter::hc_theme(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontSize = "1.2em"
+        fontSize = "1.8vmin"
       )
     )
   )
