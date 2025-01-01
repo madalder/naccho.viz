@@ -132,7 +132,7 @@ scatter <- highcharter::hc_theme(
     backgroundColor = "#fff",
     style = list(
       fontFamily = "Heebo",
-      fontSize = "1em",
+      fontSize = ".9em",
       fontWeight = "600",
       lineHeight = "1.1em"
     )

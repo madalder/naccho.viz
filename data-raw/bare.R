@@ -91,7 +91,7 @@ bare <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontSize = "1em",
+        fontSize = ".9em",
         lineHeight = "1.1em")
     ),
     itemHoverStyle = list(
