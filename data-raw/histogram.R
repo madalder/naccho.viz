@@ -113,4 +113,5 @@ histogram <-
     )
   )
 
+usethis::use_data(histogram, internal = TRUE, overwrite = TRUE)
 usethis::use_data(histogram, overwrite = TRUE)

@@ -2,7 +2,7 @@ Package: naccho.viz
 Title: NACCHO-themed Data Visualization
 Version: 0.0.0.9000
 Authors@R: 
-    person("Lindsay", "Jorgenson", , "ljorgenson@astho.org", role = c("aut", "cre"))
+    person("Madoc", "Alder", , "mmarshall@astho.org", role = c("aut", "cre"))
 Description: Develops highcharter data visualization using various NACCHO themes.
 License: file LICENSE
 Encoding: UTF-8

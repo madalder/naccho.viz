@@ -113,4 +113,5 @@ basic <-
     )
   )
 
+usethis::use_data(basic, internal = TRUE, overwrite = TRUE)
 usethis::use_data(basic, overwrite = TRUE)

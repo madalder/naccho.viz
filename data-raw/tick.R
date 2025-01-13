@@ -106,4 +106,5 @@ tick <-
 
 
 
-usethis::use_data(tick, overwrite = TRUE)
+usethis::use_data(tick, internal = TRUE, overwrite = TRUE)
+usethis::use_data(tick,  overwrite = TRUE)

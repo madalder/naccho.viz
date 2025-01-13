@@ -107,4 +107,5 @@ line <-
     )
   )
 
+usethis::use_data(line, internal = TRUE, overwrite = TRUE)
 usethis::use_data(line, overwrite = TRUE)

@@ -116,4 +116,5 @@ butterfly <-
     )
   )
 
-usethis::use_data(butterfly, overwrite = TRUE)
+usethis::use_data(butterfly, internal = TRUE, overwrite = TRUE)
+usethis::use_data(butterfly,  overwrite = TRUE)

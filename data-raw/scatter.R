@@ -156,4 +156,6 @@ scatter <- highcharter::hc_theme(
 )
 
 
-usethis::use_data(scatter, overwrite = TRUE)
+usethis::use_data(scatter,  internal = TRUE, overwrite = TRUE)
+
+usethis::use_data(scatter,  overwrite = TRUE)
