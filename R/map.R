@@ -150,7 +150,7 @@ create_cat_map <- function(data,
       useHTML = TRUE
     ) %>%
     highcharter::hc_add_theme(
-      naccho.viz::minimal
+      naccho.viz::basic
     ) %>%
     highcharter::hc_exporting(
       enabled = TRUE,
@@ -169,16 +169,17 @@ create_cat_map <- function(data,
           symbolStrokeWidth = 2,
           symbolFill = naccho.viz::teal,
           symbolStroke = naccho.viz::teal,
-          menuItems = c("printChart",
-                        "separator",
-                        "downloadPNG",
-                        "downloadJPEG",
-                        "downloadPDF",
-                        "downloadSVG",
-                        "separator",
-                        "downloadCSV",
-                        "downloadXLS",
-                        "openInCloud")
+          menuItems = c(
+            # "printChart",
+            # "separator",
+            "downloadPNG",
+            "downloadJPEG",
+            "downloadPDF",
+            "downloadSVG",
+            # "separator",
+            "downloadCSV",
+            "downloadXLS",
+            "openInCloud")
         )
       )
     )

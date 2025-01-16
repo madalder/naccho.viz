@@ -144,16 +144,17 @@ create_pie <- function(data,
           symbolStrokeWidth = 2,
           symbolFill = naccho.viz::teal,
           symbolStroke = naccho.viz::teal,
-          menuItems = c("printChart",
-                        "separator",
-                        "downloadPNG",
-                        "downloadJPEG",
-                        "downloadPDF",
-                        "downloadSVG",
-                        "separator",
-                        "downloadCSV",
-                        "downloadXLS",
-                        "openInCloud")
+          menuItems = c(
+            # "printChart",
+            # "separator",
+            "downloadPNG",
+            "downloadJPEG",
+            "downloadPDF",
+            "downloadSVG",
+            # "separator",
+            "downloadCSV",
+            "downloadXLS",
+            "openInCloud")
         )
       )
     )

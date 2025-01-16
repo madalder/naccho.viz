@@ -23,7 +23,7 @@ create_stacked_bar(
   legend_enable = FALSE,
   legend_title = "",
   tooltip,
-  select_theme = naccho.viz::minimal,
+  select_theme = naccho.viz::basic,
   allow_export = TRUE,
   accessible_desc = ""
 )

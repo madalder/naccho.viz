@@ -163,16 +163,17 @@ create_single_bar <- function(
           symbolStrokeWidth = 2,
           symbolFill = naccho.viz::teal,
           symbolStroke = naccho.viz::teal,
-          menuItems = c("printChart",
-                        "separator",
-                        "downloadPNG",
-                        "downloadJPEG",
-                        "downloadPDF",
-                        "downloadSVG",
-                        "separator",
-                        "downloadCSV",
-                        "downloadXLS",
-                        "openInCloud")
+          menuItems = c(
+            # "printChart",
+            # "separator",
+            "downloadPNG",
+            "downloadJPEG",
+            "downloadPDF",
+            "downloadSVG",
+            # "separator",
+            "downloadCSV",
+            "downloadXLS",
+            "openInCloud")
         )
       )
     )
@@ -258,7 +259,7 @@ create_stacked_bar <- function(
     legend_enable = FALSE,
     legend_title = "",
     tooltip,
-    select_theme = naccho.viz::minimal,
+    select_theme = naccho.viz::basic,
     allow_export = TRUE,
     accessible_desc = ""
 ) {
@@ -359,16 +360,17 @@ create_stacked_bar <- function(
           symbolStrokeWidth = 2,
           symbolFill = naccho.viz::teal,
           symbolStroke = naccho.viz::teal,
-          menuItems = c("printChart",
-                        "separator",
-                        "downloadPNG",
-                        "downloadJPEG",
-                        "downloadPDF",
-                        "downloadSVG",
-                        "separator",
-                        "downloadCSV",
-                        "downloadXLS",
-                        "openInCloud")
+          menuItems = c(
+            # "printChart",
+            # "separator",
+            "downloadPNG",
+            "downloadJPEG",
+            "downloadPDF",
+            "downloadSVG",
+            # "separator",
+            "downloadCSV",
+            "downloadXLS",
+            "openInCloud")
         )
       )
     )
@@ -460,7 +462,7 @@ create_grouped_bar <- function(
     legend_title = "",
     legend_reverse = FALSE,
     tooltip,
-    select_theme = naccho.viz::minimal,
+    select_theme = naccho.viz::basic,
     allow_export = TRUE,
     accessible_desc = ""
 ) {
@@ -560,16 +562,17 @@ create_grouped_bar <- function(
           symbolStrokeWidth = 2,
           symbolFill = naccho.viz::teal,
           symbolStroke = naccho.viz::teal,
-          menuItems = c("printChart",
-                        "separator",
-                        "downloadPNG",
-                        "downloadJPEG",
-                        "downloadPDF",
-                        "downloadSVG",
-                        "separator",
-                        "downloadCSV",
-                        "downloadXLS",
-                        "openInCloud")
+          menuItems = c(
+            # "printChart",
+            # "separator",
+            "downloadPNG",
+            "downloadJPEG",
+            "downloadPDF",
+            "downloadSVG",
+            # "separator",
+            "downloadCSV",
+            "downloadXLS",
+            "openInCloud")
         )
       )
     )
@@ -738,13 +741,14 @@ create_tick_bar <- function(
           symbolStrokeWidth = 2,
           symbolFill = naccho.viz::teal,
           symbolStroke = naccho.viz::teal,
-          menuItems = c("printChart",
-                        "separator",
+          menuItems = c(
+                        # "printChart",
+                        # "separator",
                         "downloadPNG",
                         "downloadJPEG",
                         "downloadPDF",
                         "downloadSVG",
-                        "separator",
+                        # "separator",
                         "downloadCSV",
                         "downloadXLS",
                         "openInCloud")

@@ -147,16 +147,17 @@ create_single_item <- function(
           symbolStrokeWidth = 2,
           symbolFill = naccho.viz::teal,
           symbolStroke = naccho.viz::teal,
-          menuItems = c("printChart",
-                        "separator",
-                        "downloadPNG",
-                        "downloadJPEG",
-                        "downloadPDF",
-                        "downloadSVG",
-                        "separator",
-                        "downloadCSV",
-                        "downloadXLS",
-                        "openInCloud")
+          menuItems = c(
+            # "printChart",
+            # "separator",
+            "downloadPNG",
+            "downloadJPEG",
+            "downloadPDF",
+            "downloadSVG",
+            # "separator",
+            "downloadCSV",
+            "downloadXLS",
+            "openInCloud")
         )
       )
     )
@@ -402,16 +403,17 @@ create_icon_item <- function(
           symbolStrokeWidth = 2,
           symbolFill = naccho.viz::teal,
           symbolStroke = naccho.viz::teal,
-          menuItems = c("printChart",
-                        "separator",
-                        "downloadPNG",
-                        "downloadJPEG",
-                        "downloadPDF",
-                        "downloadSVG",
-                        "separator",
-                        "downloadCSV",
-                        "downloadXLS",
-                        "openInCloud")
+          menuItems = c(
+            # "printChart",
+            # "separator",
+            "downloadPNG",
+            "downloadJPEG",
+            "downloadPDF",
+            "downloadSVG",
+            # "separator",
+            "downloadCSV",
+            "downloadXLS",
+            "openInCloud")
         )
       )
     )

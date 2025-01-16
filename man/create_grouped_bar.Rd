@@ -24,7 +24,7 @@ create_grouped_bar(
   legend_title = "",
   legend_reverse = FALSE,
   tooltip,
-  select_theme = naccho.viz::minimal,
+  select_theme = naccho.viz::basic,
   allow_export = TRUE,
   accessible_desc = ""
 )
