@@ -39,7 +39,7 @@ scatter <- highcharter::hc_theme(
     labels = list(
       style = list(
         fontFamily = "Heebo",
-        fontSize = "calc(8px + .133em + .5vmin)",
+        # fontSize = "calc(8px + .133em + .5vmin)",
         fontWeight = "300",
         textOverflow = "none",
         color = naccho.viz::grey

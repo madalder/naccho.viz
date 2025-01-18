@@ -33,7 +33,7 @@ tick <-
         style = list(
           padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "calc(8px + .133em + .5vmin)",
+          # fontSize = "calc(8px + .133em + .5vmin)",
           fontWeight = "bold",
           textOverflow = 'none',
           color = naccho.viz::grey)
