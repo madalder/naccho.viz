@@ -11,21 +11,27 @@ minimal <-
       style = list(
         color = naccho.viz::navy,
         fontFamily = "Heebo",
-        fontWeight = "bold",
-        fontSize = "calc(12px + .2em + .75vmin)")
+        fontWeight = "bold"
+        # ,
+        # fontSize = "calc(12px + .2em + .75vmin)"
+        )
     ),
     subtitle = list(
       style = list(
         color = naccho.viz::grey,
         fontFamily = "Heebo",
-        fontWeight = "400",
-        fontSize = "calc(10px + .167em + .625vmin)")
+        fontWeight = "400"
+        # ,
+        # fontSize = "calc(10px + .167em + .625vmin)"
+        )
     ),
     caption = list(
       style = list(
         color = naccho.viz::grey,
-        fontFamily = "Heebo",
-        fontSize = "calc(7.2px + .12em + .45vmin)")
+        fontFamily = "Heebo"
+        # ,
+        # fontSize = "calc(7.2px + .12em + .45vmin)"
+        )
     ),
     xAxis = list(
       lineColor = naccho.viz::grey,
@@ -43,8 +49,10 @@ minimal <-
         style = list(
           color = naccho.viz::grey,
           fontFamily = "Heebo",
-          fontWeight = "400",
-          fontSize = "calc(8px + .133em + .5vmin)")
+          fontWeight = "400"
+          # ,
+          # fontSize = "calc(8px + .133em + .5vmin)"
+          )
       )
     ),
     yAxis = list(
@@ -61,7 +69,7 @@ minimal <-
         style = list(
           padding = "0.5em",
           fontFamily = "Heebo",
-          fontSize = "calc(8px + .133em + .5vmin)",
+          # fontSize = "calc(8px + .133em + .5vmin)",
           fontWeight = "normal",
           color = naccho.viz::grey)
       ),
@@ -73,22 +81,26 @@ minimal <-
         style = list(
           color = naccho.viz::grey,
           fontFamily = "Heebo",
-          fontWeight = "700",
-          fontSize = "calc(8px + .133em + .5vmin)")
+          fontWeight = "700"
+          # ,
+          # fontSize = "calc(8px + .133em + .5vmin)"
+          )
       )
     ),
     legend = list(
       itemStyle = list(
         fontFamily = "Heebo",
         color = naccho.viz::grey,
-        fontSize = "calc(8px + .133em + .5vmin)",
+        # fontSize = "calc(8px + .133em + .5vmin)",
         fontWeight = "normal",
         color = "#666"),
       title = list(
         style = list(
           textDecoration = "none",
-          fontFamily = "Heebo",
-          fontSize = "calc(8px + .133em + .5vmin)")
+          fontFamily = "Heebo"
+          # ,
+          # fontSize = "calc(8px + .133em + .5vmin)"
+          )
       )
     ),
     tooltip = list(
@@ -97,9 +109,11 @@ minimal <-
       backgroundColor = "#fff",
       style = list(
         fontFamily = "Heebo",
-        fontWeight = "400",
-        fontSize = "calc(10px + .1vw + .2em)",
-        lineHeight = "calc((10px + .1vw + .2em) * 1.3)")
+        fontWeight = "400"
+        # ,
+        # fontSize = "calc(10px + .1vw + .2em)",
+        # lineHeight = "calc((10px + .1vw + .2em) * 1.3)"
+        )
     ),
     itemHoverStyle = list(
       color = naccho.viz::green
