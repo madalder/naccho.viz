@@ -93,9 +93,9 @@ create_cat_map <- function(data,
         linkedDescription = accessible_desc
       )
     ) %>%
-    highcharter::hc_chart(
-      height = 600
-    ) %>%
+    # highcharter::hc_chart(
+    #   height = 600
+    # ) %>%
     highcharter::hc_colors(
       colors = my_colors
     ) %>%
