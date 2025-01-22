@@ -22,10 +22,9 @@ globalVariables(c("icon", "color",  "uri"))
 #'
 icon_symbol <- function(name, ...) {
   file <- tempfile(fileext = ".png")
-  fontawesome::fa_png(name, file = file, ...)
+  fontawesome::fa(name, file = file, ...)
   knitr::image_uri(file)
 }
-
 
 
 

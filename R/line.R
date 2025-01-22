@@ -274,7 +274,7 @@ create_grouped_line <- function(data,
     ) %>%
     highcharter::hc_xAxis(
       title = list(text = x_label), # x-axis label
-      categories = unique(as.list(data[[x_variable]]))
+      categories = unique((data[[x_variable]]))
     ) %>%
     highcharter::hc_yAxis(
       title = list(text = y_label), # y-axis label
