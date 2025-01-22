@@ -306,8 +306,10 @@ create_icon_item <- function(
 
   data <- data %>%
     dplyr::mutate(
-      icon = marker_icon,
-      uri = purrr::map2_chr(icon, color, ~ naccho.viz::icon_symbol(.x, fill = .y)),
+      icon = marker_icon,  # Assign the marker icon
+      # Generate Data URI using icon_symbol() for each icon-color combination
+      uri = purrr::map2_chr(icon, color, ~ icon_symbol(.x, fill = .y)),
+      # Format the marker field using the Data URI
       marker = purrr::map(uri, ~ list(symbol = stringr::str_glue("url({data_uri})", data_uri = .x)))
     )
 
