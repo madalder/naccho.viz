@@ -4,7 +4,7 @@
 \alias{icon_symbol}
 \title{Item Icon Helper}
 \usage{
-icon_symbol(name, ...)
+icon_symbol(name, fill = NULL, ...)
 }
 \arguments{
 \item{name}{Name of the icon, corresponds to marker_icon.}

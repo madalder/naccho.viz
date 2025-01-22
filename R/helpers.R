@@ -20,10 +20,14 @@ globalVariables(c("icon", "color",  "uri"))
 #'   marker = purrr::map(uri, ~ list(symbol = stringr::str_glue("url({data_uri})", data_uri = .x)))
 #'   )
 #'
-icon_symbol <- function(name, ...) {
-  file <- tempfile(fileext = ".png")
-  fontawesome::fa(name, file = file, ...)
-  knitr::image_uri(file)
+icon_symbol <- function(name, fill = NULL, ...) {
+  # Generate inline SVG using fontawesome::fa()
+  svg <- fontawesome::fa(name, fill = fill, ...)
+
+  # Convert SVG to a data URI for use in Highcharts
+  svg_data_uri <- paste0("data:image/svg+xml;utf8,", URLencode(svg, reserved = TRUE))
+
+  return(svg_data_uri)
 }
 
 
